@@ -2,7 +2,10 @@ package com.uautotime.dao;
 
 import com.uautotime.pojo.Category;
 
+import java.util.*;
+
 public interface CategoryMapper {
+
     int deleteByPrimaryKey(Integer id);
 
     int insert(Category record);
@@ -14,4 +17,7 @@ public interface CategoryMapper {
     int updateByPrimaryKeySelective(Category record);
 
     int updateByPrimaryKey(Category record);
+
+    java.util.List<Category> selectCategoryChilerenByParentId(Integer parentId);
+
 }
