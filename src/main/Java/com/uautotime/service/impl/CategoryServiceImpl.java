@@ -24,6 +24,7 @@ import java.util.logging.Logger;
 public class CategoryServiceImpl implements ICategoryService {
 
     private Logger logger = LoggerFactory.getLogger(CategoryServiceImpl.class);
+
     @Autowired
     private CategoryMapper categoryMapper;
 
@@ -72,7 +73,7 @@ public class CategoryServiceImpl implements ICategoryService {
      * @param categoryId
      * @return
      */
-    public ServerResponse selectCategoryAndChildrenById(Integer categoryId){
+    public ServerResponse<List<Integer>> selectCategoryAndChildrenById(Integer categoryId){
 
         Set<Category> categorySet = Sets.newHashSet();
         findChildrenCategory(categorySet,categoryId);
@@ -99,4 +100,5 @@ public class CategoryServiceImpl implements ICategoryService {
         }
         return categorySet;
     }
+
 }

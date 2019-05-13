@@ -9,6 +9,7 @@ import com.uautotime.service.IUserService;
 import com.uautotime.util.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.UUID;
 
@@ -139,7 +140,7 @@ public class UserServiceImpl implements IUserService {
 
     public ServerResponse<String> resetPassword(String passwordOld,String passwordNew,User user){
         //防止横向越权，要校验一下这个用户的旧密码，一定要指定是这个用户，因为我们会查询一个count(1)，如果不指定id，那么结果就是true啦
-        int resultCount = userMapper.checkPassword(MD5Util.MD5EncodeUtf8(passwordOld,user.getId());
+        int resultCount = userMapper.checkPassword(MD5Util.MD5EncodeUtf8(passwordOld),user.getId());
         if(resultCount == 0){
             return ServerResponse.creatByErrorMessage("旧密码错误");
         }
@@ -190,7 +191,7 @@ public class UserServiceImpl implements IUserService {
      * @return
      */
     public ServerResponse checkAdminRole(User user){
-        if(user !== null && user.getRole().intValue() == Const.Role.ROLE_ADMIN){
+        if(user != null && user.getRole().intValue() == Const.Role.ROLE_ADMIN){
             return ServerResponse.creatBySuccess();
         }
         return ServerResponse.creatByError();
