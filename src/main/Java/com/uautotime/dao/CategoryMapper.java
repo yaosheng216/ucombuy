@@ -18,6 +18,6 @@ public interface CategoryMapper {
 
     int updateByPrimaryKey(Category record);
 
-    java.util.List<Category> selectCategoryChilerenByParentId(Integer parentId);
+    List<Category> selectCategoryChilerenByParentId(Integer parentId);
 
 }

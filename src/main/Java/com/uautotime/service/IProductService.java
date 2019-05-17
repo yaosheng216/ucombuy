@@ -14,7 +14,7 @@ public class IProductService {
 
     ServerResponse<String> setSaleStatus(Integer productId,Integer status);
 
-     ServerResponse<ProductDetailVo> manageProductDetail(Integer productId);
+    ServerResponse<ProductDetailVo> manageProductDetail(Integer productId);
 
     ServerResponse<pageInfo> getProductList(int pageNum,int pageSize);
 

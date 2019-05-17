@@ -36,5 +36,4 @@ public class ProductController {
         return iProductService.getProductByKeywordCategory(keyword,categoryId,pageNum,pageSize,orderBy);
     }
 
-
 }
