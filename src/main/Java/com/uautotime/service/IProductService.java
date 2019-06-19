@@ -8,7 +8,7 @@ import com.uautotime.vo.ProductDetailVo;
 /**
  * Created by admin on 2019/5/8.
  */
-public class IProductService {
+public interface IProductService {
 
     ServerResponse saveOrUpdateProduct(Product product);
 
@@ -16,7 +16,7 @@ public class IProductService {
 
     ServerResponse<ProductDetailVo> manageProductDetail(Integer productId);
 
-    ServerResponse<pageInfo> getProductList(int pageNum,int pageSize);
+    ServerResponse<PageInfo> getProductList(int pageNum,int pageSize);
 
     ServerResponse<PageInfo> searchProduct(String productName, Integer productId, int pageNum, int pageSize);
 

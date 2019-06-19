@@ -14,4 +14,5 @@ public interface PayInfoMapper {
     int updateByPrimaryKeySelective(PayInfo record);
 
     int updateByPrimaryKey(PayInfo record);
+
 }

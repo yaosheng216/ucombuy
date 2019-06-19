@@ -5,13 +5,13 @@ import com.github.pagehelper.PageInfo;
 import com.google.common.collect.Lists;
 import com.uautotime.common.Const;
 import com.uautotime.common.ResponseCode;
+import com.uautotime.common.ServerResponse;
 import com.uautotime.dao.CategoryMapper;
+import com.uautotime.dao.ProductMapper;
 import com.uautotime.pojo.Category;
+import com.uautotime.pojo.Product;
 import com.uautotime.service.ICategoryService;
 import com.uautotime.service.IProductService;
-import com.uautotime.common.ServerResponse;
-import com.uautotime.dao.ProductMapper;
-import com.uautotime.pojo.Product;
 import com.uautotime.util.DateTimeUtil;
 import com.uautotime.util.PropertiesUtil;
 import com.uautotime.vo.ProductDetailVo;
@@ -20,13 +20,14 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.xml.ws.Response;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by admin on 2019/5/8.
  */
 @Service("iProductService")
-public class ProductServiceImpl {
+public class ProductServiceImpl implements IProductService {
 
     @Autowired
     private ProductMapper productMapper;
@@ -64,7 +65,7 @@ public class ProductServiceImpl {
 
     public ServerResponse<String> setSaleStatus(Integer productId,Integer status){
         if(productId == null || status == null){
-            return ServerResponse.creatByErrorCodeMessage(ResponseCode.ILLEGAL_RGUMENT.getCode(),ResponseCode.ILLEGAL_RGUMENT.getDesc());
+            return ServerResponse.creatByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(),ResponseCode.ILLEGAL_ARGUMENT.getDesc());
         }
         Product product = new Product();
         product.setId(productId);
@@ -76,26 +77,26 @@ public class ProductServiceImpl {
         return ServerResponse.creatByErrorMessage("修改产品销售状态失败");
     }
 
-    public ServerResponse<ProductDetailVo> manageProductDetail(Integer productId){
-        if(productId == null){
-            return ServerResponse.creatByErrorCodeMessage(ResponseCode.ILLEGAL_RGUMENT.getCode(),ResponseCode.ILLEGAL_RGUMENT.getDesc());
+    public ServerResponse<ProductDetailVo> manageProductDetail(Integer productId) {
+        if (productId == null) {
+            return ServerResponse.creatByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(), ResponseCode.ILLEGAL_ARGUMENT.getDesc());
         }
-        Product product = ProductMapper.selectByPrimaryKey(productId);
-        if(product == null){
+        Product product = productMapper.selectByPrimaryKey(productId);
+        if (product == null) {
             return ServerResponse.creatByErrorMessage("产品已下架或者删除");
         }
         ProductDetailVo productDetailVo = assembleProductDetailVo(product);
         return ServerResponse.creatBySuccess(productDetailVo);
     }
 
-    private assembleProductDetailVo(Product product){
+    private ProductDetailVo assembleProductDetailVo(Product product){
 
         ProductDetailVo productDetailVo = new ProductDetailVo();
         productDetailVo.setId(product.getId());
         productDetailVo.setSubtitle(product.getSubtitle());
         productDetailVo.setPrice(product.getPrice());
         productDetailVo.setMainImage(product.getMainImage());
-        productDetailVo.setSubImage(product.getSubImages());
+        productDetailVo.setSubImages(product.getSubImages());
         productDetailVo.setCategoryId(product.getCategoryId());
         productDetailVo.setDetail(product.getDetail());
         productDetailVo.setName(product.getName());
@@ -115,7 +116,7 @@ public class ProductServiceImpl {
         return productDetailVo;
     }
 
-    public ServerResponse<pageInfo> getProductList(int pageNum,int pageSize){
+    public ServerResponse<PageInfo> getProductList(int pageNum,int pageSize){
         //startPage->start
         //填充自己的sql查询逻辑
         //pageHelper-收尾
@@ -134,7 +135,7 @@ public class ProductServiceImpl {
     private ProductListVo assembleProductDetailVo(Product product){
 
         ProductListVo productListVo = new ProductListVo();
-        ProductListVo.setId(product.getId());
+        productListVo.setId(product.getId());
         productListVo.setName(product.getName());
         productListVo.setCategoryId(product.getCategoryId());
         productListVo.setImageHost(PropertiesUtil.getProperty("ftp.server.http.prefix","http://img.happymmall.com/"));
@@ -165,9 +166,9 @@ public class ProductServiceImpl {
 
     public ServerResponse<ProductDetailVo> getProductDetail(Integer productId ){
         if(productId == null){
-            return ServerResponse.creatByErrorCodeMessage(ResponseCode.ILLEGAL_RGUMENT.getCode(),ResponseCode.ILLEGAL_RGUMENT.getDesc());
+            return ServerResponse.creatByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(),ResponseCode.ILLEGAL_ARGUMENT.getDesc());
         }
-        Product product = ProductMapper.selectByPrimaryKey(productId);
+        Product product = productMapper.selectByPrimaryKey(productId);
         if(product == null){
             return ServerResponse.creatByErrorMessage("产品已下架或者删除");
         }
@@ -180,7 +181,7 @@ public class ProductServiceImpl {
 
     public ServerResponse<PageInfo> getProductByKeywordCategory(String keyword,Integer categoryId,int pageNum,int pageSize,String orderBy){
         if(StringUtils.isBlank(keyword) && categoryId == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(),ResponseCode.ILLEGAL_ARGUMENT.getDesc());
+            return ServerResponse.creatByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(),ResponseCode.ILLEGAL_ARGUMENT.getDesc());
         }
         List<Integer> categoryIdList = new ArrayList<Integer>();
 
@@ -191,7 +192,7 @@ public class ProductServiceImpl {
                 PageHelper.startPage(pageNum,pageSize);
                 List<ProductListVo> productListVoList = Lists.newArrayList();
                 PageInfo pageInfo = new PageInfo(productListVoList);
-                return ServerResponse.createBySuccess(pageInfo);
+                return ServerResponse.creatBySuccess(pageInfo);
             }
             categoryIdList = iCategoryService.selectCategoryAndChildrenById(category.getId()).getData();
         }
@@ -217,7 +218,7 @@ public class ProductServiceImpl {
 
         PageInfo pageInfo = new PageInfo(productList);
         pageInfo.setList(productListVoList);
-        return ServerResponse.createBySuccess(pageInfo);
+        return ServerResponse.creatBySuccess(pageInfo);
     }
 
 }

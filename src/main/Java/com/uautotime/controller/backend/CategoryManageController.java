@@ -3,16 +3,16 @@ package com.uautotime.controller.backend;
 import com.uautotime.common.Const;
 import com.uautotime.common.ResponseCode;
 import com.uautotime.common.ServerResponse;
+import com.uautotime.pojo.User;
 import com.uautotime.service.ICategoryService;
+import com.uautotime.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
-import javax.xml.ws.Response;
 
 /**
  * Created by admin on 2019/5/6.
@@ -21,16 +21,16 @@ import javax.xml.ws.Response;
 @RequestMapping("/manage/category")
 public class CategoryManageController {
 
+    @Autowired
+    private IUserService iUserService;
+
+    @Autowired
+    private ICategoryService iCategoryService;
+
+    @RequestMapping("add_category.do")
+    @ResponseBody
     public ServerResponse addCategory(HttpSession session, String categoryName, @RequestParam(value = "parentId",defaultValue = "0") int parentId) {
 
-        @Autowired
-        private IUserService iUserService;
-
-        @Autowired
-        private ICategoryService iCategoryService;
-
-        @RequestMapping("add_category.do")
-        @ResponseBody
         User user = (User) session.getAttribute(Const.CURRENT_USER);
         if (user == null) {
             return ServerResponse.creatByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(), "用户未登录，请登录");
@@ -55,7 +55,7 @@ public class CategoryManageController {
         }
         if(iUserService.checkAdminRole(user).isSuccess()){
             //更新categoryName
-            return ICategoryService.updateCategoryName(categoryId,categoryName);
+            return iCategoryService.updateCategoryName(categoryId,categoryName);
         }else{
             return ServerResponse.creatByErrorMessage("无权限操作，需要管理员权限");
         }
@@ -70,7 +70,7 @@ public class CategoryManageController {
         }
         if(iUserService.checkAdminRole(user).isSuccess()){
             // 查询子节点的category信息，并且不递归，保持平级
-            return iCategoeyService.getChilerenParallelCategory(categoryId);
+            return iCategoryService.getChildrenParallelCategory(categoryId);
         }else{
             return ServerResponse.creatByErrorMessage("无权限操作，需要管理员权限");
         }

@@ -9,7 +9,6 @@ import com.uautotime.service.IUserService;
 import com.uautotime.util.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import java.util.UUID;
 
@@ -86,7 +85,7 @@ public class UserServiceImpl implements IUserService {
     public ServerResponse selectQuestion(String username){
 
         ServerResponse validResponse = this.checkVaild(username,Const.USERNAME);
-        if(validReponse.isSuccess()){
+        if(validResponse.isSuccess()){
             //用户不存在
             return ServerResponse.creatByErrorMessage("用户不存在");
         }
@@ -98,7 +97,7 @@ public class UserServiceImpl implements IUserService {
         return ServerResponse.creatByErrorMessage("找回密码的问题是错误的");
     }
 
-    public ServerResponse<String> checkAnswer((String username,String question,String answer){
+    public ServerResponse<String> checkAnswer(String username,String question,String answer){
 
         int resultCount = userMapper.checkAnswer(username,question,answer);
         if(resultCount>0){
@@ -110,12 +109,12 @@ public class UserServiceImpl implements IUserService {
         return ServerResponse.creatByErrorMessage("问题的答案错误");
     }
 
-    public ServerResponse<String> forgetRestPassword(String username,String passwordNew,String forgetToken){
+    public ServerResponse<String> forgetResetPassword(String username,String passwordNew,String forgetToken){
         if(org.apache.commons.lang3.StringUtils.isBlank(forgetToken)){
             return ServerResponse.creatByErrorMessage("参数错误，token需要传递");
         }
         ServerResponse validResponse = this.checkVaild(username,Const.USERNAME);
-        if(validReponse.isSuccess()){
+        if(validResponse.isSuccess()){
             //用户不存在
             return ServerResponse.creatByErrorMessage("用户不存在");
         }
@@ -125,18 +124,20 @@ public class UserServiceImpl implements IUserService {
             return ServerResponse.creatByErrorMessage("token无效或者过期");
         }
 
-        if(org.apache.commons.lang3.StringUtils.equals(forgetToken,token)){
+        if(org.apache.commons.lang3.StringUtils.equals(forgetToken,token)) {
             String md5Password = MD5Util.MD5EncodeUtf8(passwordNew);
-            int rowCount = userMapper.updatePasswordByUsername(username,md5Password);
+            int rowCount = userMapper.updatePasswordByUsername(username, md5Password);
+
+
+            if (rowCount > 0) {
+                return ServerResponse.creatBySuccessMessage("密码修改成功");
+            }
+        } else {
+                return ServerResponse.creatByErrorMessage("token错误，请重新获取重置密码的token");
+            }
+            return ServerResponse.creatByErrorMessage("修改密码失败");
         }
 
-        if(rowCount > 0){
-            return ServerResponse.creatBySuccessMessage("密码修改成功");
-        }else{
-            return ServerResponse.creatByErrorMessage("token错误，请重新获取重置密码的token");
-        }
-        return ServerResponse.creatByErrorMessage("修改密码失败");
-    }
 
     public ServerResponse<String> resetPassword(String passwordOld,String passwordNew,User user){
         //防止横向越权，要校验一下这个用户的旧密码，一定要指定是这个用户，因为我们会查询一个count(1)，如果不指定id，那么结果就是true啦

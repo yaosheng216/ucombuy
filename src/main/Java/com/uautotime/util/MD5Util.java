@@ -1,5 +1,7 @@
 package com.uautotime.util;
 
+import java.security.MessageDigest;
+
 /**
  * Created by admin on 2019/4/25.
  */

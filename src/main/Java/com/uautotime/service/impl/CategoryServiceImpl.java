@@ -1,5 +1,6 @@
 package com.uautotime.service.impl;
 
+import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import com.uautotime.common.ServerResponse;
 import com.uautotime.dao.CategoryMapper;
@@ -7,15 +8,13 @@ import com.uautotime.pojo.Category;
 import com.uautotime.service.ICategoryService;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.xml.ws.Response;
-import java.awt.*;
 import java.awt.List;
 import java.util.*;
-import java.util.logging.Logger;
 
 /**
  * Created by admin on 2019/5/6.
@@ -36,7 +35,7 @@ public class CategoryServiceImpl implements ICategoryService {
         Category category = new Category();
         category.setName(categoryName);
         category.setParentId(parentId);
-        category.getStatus(true);             //这个分类是可用的
+        category.setStatus(true);             //这个分类是可用的
 
         int rowCount = categoryMapper.insert(category);
         if(rowCount > 0){
@@ -60,8 +59,8 @@ public class CategoryServiceImpl implements ICategoryService {
         return ServerResponse.creatByErrorMessage("更新品类失败");
     }
 
-    public ServerResponse<List<Category>> getChildrenParallelCategory(Integer categoyrId){
-        List<Category> categoryList = categoryMapper.selectCategoryChilerenByParentId(categoyrId);
+    public ServerResponse<List<Category>> getChildrenParallelCategory(Integer categoryId){
+        List<Category> categoryList = categoryMapper.selectCategoryChilerenByParentId(categoryId);
         if(CollectionUtils.isEmpty(categoryList)){
             logger.info("未找到当前分类的子分类");
         }
@@ -96,7 +95,7 @@ public class CategoryServiceImpl implements ICategoryService {
         //查询子节点，递归算法需要有一个退出条件
         List<Category> categoryList =categoryMapper.selectCategoryChilerenByParentId(categoryId);
         for(Category categoryItem : categoryList){
-            findChildrenCategory(categorySet,categoryItem,getId());
+            findChildrenCategory(categorySet,categoryItem.getId());
         }
         return categorySet;
     }

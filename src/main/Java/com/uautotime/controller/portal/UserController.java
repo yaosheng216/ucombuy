@@ -45,7 +45,7 @@ public class UserController {
     @RequestMapping(value = "logout.do",method= RequestMethod.POST)
     @ResponseBody
     public ServerResponse<String> logout(HttpSession session){
-        session.removeAttribute(Const,CURRENT_USER);
+        session.removeAttribute(Const.CURRENT_USER);
         return ServerResponse.creatBySuccess();
     }
 
@@ -64,7 +64,7 @@ public class UserController {
     @RequestMapping(value = "get_user_info.do",method= RequestMethod.POST)
     @ResponseBody
     public ServerResponse<User> getUserInfo(HttpSession session){
-        User user = (User) session.setAttribute(Const.CURRENT_USER);
+        User user = (User) session.getAttribute(Const.CURRENT_USER);
         if(user !=null){
             return ServerResponse.creatBySuccess(user);
         }
@@ -86,7 +86,7 @@ public class UserController {
     @RequestMapping(value = "forget_rest_password.do",method= RequestMethod.POST)
     @ResponseBody
     public ServerResponse<String> forgetRestPassword(String username,String passwordNew,String forgetToken){
-        return iUserService.forgetRestPassword(username,passwordNew,forgetToken);
+        return iUserService.forgetResetPassword(username,passwordNew,forgetToken);
     }
 
     @RequestMapping(value = "reset_password.do",method= RequestMethod.POST)
@@ -102,7 +102,7 @@ public class UserController {
     @RequestMapping(value = "update_information.do",method= RequestMethod.POST)
     @ResponseBody
     public ServerResponse<User> update_information(HttpSession session,User user){
-        User CurrentUser = (User)session.getAttribute(Const.CURRENT_USER);
+        User currentUser = (User)session.getAttribute(Const.CURRENT_USER);
         if(currentUser == null){
             return ServerResponse.creatByErrorMessage("用户未登录");
         }
@@ -119,7 +119,7 @@ public class UserController {
     @ResponseBody
     public ServerResponse<User> get_information(HttpSession session){
 
-        User CurrentUser = (User)session.getAttribute(Const.CURRENT_USER);
+        User currentUser = (User)session.getAttribute(Const.CURRENT_USER);
         if(currentUser == null){
             return ServerResponse.creatByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),"未登录，需要强制登陆status=10");
         }

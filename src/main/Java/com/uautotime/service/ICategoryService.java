@@ -3,8 +3,6 @@ package com.uautotime.service;
 import com.uautotime.common.ServerResponse;
 import com.uautotime.pojo.Category;
 
-import java.awt.*;
-import java.util.*;
 import java.util.List;
 
 /**
@@ -13,8 +11,11 @@ import java.util.List;
 public interface ICategoryService {
 
     ServerResponse addCategory(String categoryName, Integer parentId);
+
     ServerResponse updateCategoryName(Integer categoryId,String categoryName);
+
     ServerResponse<List<Category>> getChildrenParallelCategory(Integer categoyrId);
+
     ServerResponse<List<Integer>> selectCategoryAndChildrenById(Integer categoryId);
 
 }

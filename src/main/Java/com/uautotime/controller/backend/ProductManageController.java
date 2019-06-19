@@ -7,6 +7,7 @@ import com.uautotime.common.ServerResponse;
 import com.uautotime.pojo.Product;
 import com.uautotime.pojo.User;
 import com.uautotime.service.IFileService;
+import com.uautotime.service.IProductService;
 import com.uautotime.service.IUserService;
 import com.uautotime.util.PropertiesUtil;
 import org.apache.commons.lang3.StringUtils;
@@ -20,6 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.Map;
 
 /**
  * Created by admin on 2019/5/8.
@@ -30,6 +32,7 @@ public class ProductManageController {
 
     @Autowired
     private IUserService iUserService;
+
     @Autowired
     private IProductService iProductService;
 
@@ -100,14 +103,14 @@ public class ProductManageController {
     public ServerResponse productSearch(HttpSession session,String productName,Integer productId, @RequestParam(value = "pageNum",defaultValue = "1") int pageNum,@RequestParam(value = "pageSize",defaultValue = "10") int pageSize){
         User user = (User)session.getAttribute(Const.CURRENT_USER);
         if(user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),"用户未登录,请登录管理员");
+            return ServerResponse.creatByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),"用户未登录,请登录管理员");
 
         }
         if(iUserService.checkAdminRole(user).isSuccess()){
             //填充业务
             return iProductService.searchProduct(productName,productId,pageNum,pageSize);
         }else{
-            return ServerResponse.createByErrorMessage("无权限操作");
+            return ServerResponse.creatByErrorMessage("无权限操作");
         }
     }
 
@@ -117,28 +120,28 @@ public class ProductManageController {
 
         User user = (User)session.getAttribute(Const.CURRENT_USER);
         if(user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),"用户未登录,请登录管理员");
+            return ServerResponse.creatByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),"用户未登录,请登录管理员");
 
         }
         if(iUserService.checkAdminRole(user).isSuccess()){
             //填充业务
             String path = request.getSession().getServletContext().getRealPath("upload");
-            String targetFileName = iFileService.upload(file,path);
+            String targetFileName = iFileService.upload(File,path);
             String url = PropertiesUtil.getProperty("ftp.server.http.prefix")+targetFileName;
 
             Map fileMape = Maps.newHashMap();
-            fileMap.put("uri",targetFileName);
-            fileMap.put("url",url);
-            return ServerResponse.creatBySuccess(fileMap);
+            fileMape.put("uri",targetFileName);
+            fileMape.put("url",url);
+            return ServerResponse.creatBySuccess(fileMape);
         }else{
-            return ServerResponse.createByErrorMessage("无权限操作");
+            return ServerResponse.creatByErrorMessage("无权限操作");
         }
 
     }
 
     @RequestMapping("richtext_img_upload.do")
     @ResponseBody
-    public map richtextImgUpload(HttpSession session, @RequestParam(value = "upload_file",required = false) MultipartFile File, HttpServletRequest request, HttpServletResponse response){
+    public Map richtextImgUpload(HttpSession session, @RequestParam(value = "upload_file",required = false) MultipartFile File, HttpServletRequest request, HttpServletResponse response){
 
         Map resultMap = Maps.newHashMap();
         User user = (User)session.getAttribute(Const.CURRENT_USER);
@@ -158,7 +161,7 @@ public class ProductManageController {
         if(iUserService.checkAdminRole(user).isSuccess()){
             //填充业务
             String path = request.getSession().getServletContext().getRealPath("upload");
-            String targetFileName = iFileService.upload(file,path);
+            String targetFileName = iFileService.upload(File,path);
             if(StringUtils.isBlank(targetFileName)){
                 resultMap.put("sucess",false);
                 resultMap.put("msg","上传失败");
