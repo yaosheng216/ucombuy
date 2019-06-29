@@ -8,7 +8,6 @@ springmvc文件上传
     <input type = "submit" value = "springmvc上传文件" />
 </from>
 
-
 富文本图片文件上传
 <from name = "from1" action = "/manage/product/richtext_img_upload.do" method = "post" encttype = "multipart/from-data">
     <input type = "file" name = "upload_file" />
