@@ -115,7 +115,7 @@ public class UserController {
         return response;
     }
 
-    @RequestMapping(value = ".do",method= RequestMethod.POST)
+    @RequestMapping(value = "get_information.do",method= RequestMethod.POST)
     @ResponseBody
     public ServerResponse<User> get_information(HttpSession session){
 

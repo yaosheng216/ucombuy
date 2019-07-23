@@ -2,221 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6caef89c-2be8-4c8f-9693-656016679d5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/alipay/demo/trade/DemoHbRunner.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/alipay/demo/trade/Main$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/alipay/demo/trade/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$AlipayCallback.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$Cart.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$OrderStatusEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$PayPlatformEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$PaymentTypeEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$ProductListOrderBy.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$ProductStatusEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$Role.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/ResponseCode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/ServerResponse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/TokenCache$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/TokenCache.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/backend/CategoryManageController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/backend/OrderManageController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/backend/ProductManageController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/backend/UserManageController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/CartController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/OrderController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/ProductController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/ShippingController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/UserController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/dao/CartMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/dao/CategoryMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/dao/OrderItemMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/dao/OrderMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/dao/PayInfoMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/dao/ProductMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/dao/ShippingMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/dao/UserMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/pojo/Cart.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/pojo/Category.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/pojo/Order.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/pojo/OrderItem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/pojo/PayInfo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/pojo/Product.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/pojo/Shipping.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/pojo/User.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/ICartService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/ICategoryService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/IFileService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/IOrderService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/IProductService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/IShippingService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/IUserService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/CartServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/CategoryServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/FileServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/OrderServiceImpl$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/OrderServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/ProductServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/ShippingServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/UserServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/BigDecimalUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/DateTimeUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/FTPUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/MD5Util.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/PropertiesUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/vo/CartProductVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/vo/CartVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/vo/OrderItemVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/vo/OrderProductVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/vo/OrderVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/vo/ProductDetailVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/vo/ProductListVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/vo/ShippingVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall.war" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/alipay/demo/trade/DemoHbRunner.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/alipay/demo/trade/Main$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/alipay/demo/trade/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/common/Const$AlipayCallback.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/common/Const$Cart.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/common/Const$OrderStatusEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/common/Const$PayPlatformEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/common/Const$PaymentTypeEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/common/Const$ProductListOrderBy.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/common/Const$ProductStatusEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/common/Const$Role.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/common/Const.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/common/ResponseCode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/common/ServerResponse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/common/TokenCache$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/common/TokenCache.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/controller/backend/CategoryManageController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/controller/backend/OrderManageController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/controller/backend/ProductManageController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/controller/backend/UserManageController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/controller/portal/CartController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/controller/portal/OrderController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/controller/portal/ProductController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/controller/portal/ShippingController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/controller/portal/UserController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/dao/CartMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/dao/CategoryMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/dao/OrderItemMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/dao/OrderMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/dao/PayInfoMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/dao/ProductMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/dao/ShippingMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/dao/UserMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/pojo/Cart.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/pojo/Category.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/pojo/Order.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/pojo/OrderItem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/pojo/PayInfo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/pojo/Product.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/pojo/Shipping.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/pojo/User.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/ICartService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/ICategoryService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/IFileService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/IOrderService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/IProductService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/IShippingService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/IUserService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/impl/CartServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/impl/CategoryServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/impl/FileServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/impl/OrderServiceImpl$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/impl/OrderServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/impl/ProductServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/impl/ShippingServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/service/impl/UserServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/util/BigDecimalUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/util/DateTimeUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/util/FTPUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/util/MD5Util.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/util/PropertiesUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/vo/CartProductVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/vo/CartVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/vo/OrderItemVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/vo/OrderProductVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/vo/OrderVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/vo/ProductDetailVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/vo/ProductListVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/com/uautotime/vo/ShippingVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/alipay-sdk-java-3.6.0.ALL-sources.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/alipay-sdk-java-3.6.0.ALL.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/alipay-trade-sdk-20161215-source.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/alipay-trade-sdk-20161215.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/aopalliance-1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/aspectjrt-1.6.11.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/aspectjweaver-1.7.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/commons-codec-1.10.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/commons-collections-3.2.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/commons-configuration-1.10.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/commons-dbcp-1.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/commons-fileupload-1.2.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/commons-io-2.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/commons-lang-2.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/commons-lang3-3.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/commons-logging-1.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/commons-net-3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/commons-pool-1.5.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/commons-pool2-2.4.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/core-2.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/gson-2.3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/guava-20.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/hamcrest-core-1.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/hashids-1.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/jackson-core-asl-1.9.12.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/jackson-mapper-asl-1.9.12.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/jedis-2.9.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/joda-time-2.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/jsqlparser-0.9.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/junit-4.12.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/logback-classic-1.1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/logback-core-1.1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/mybatis-3.4.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/mybatis-paginator-1.2.17.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/mybatis-spring-1.3.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/mysql-connector-java-5.1.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/pagehelper-4.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/slf4j-api-1.7.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/spring-aop-4.0.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/spring-beans-4.0.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/spring-context-4.0.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/spring-core-4.0.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/spring-expression-4.0.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/spring-jdbc-4.0.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/spring-oxm-4.0.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/spring-test-4.0.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/spring-tx-4.0.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/spring-web-4.0.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/spring-webmvc-4.0.0.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/lib/tomcat-servlet-api-7.0.64.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/com/uautotime/test/BigDecimalTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/applicationContext-datasource.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/datasource.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/generatorConfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/logback.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/CartMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/CategoryMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/OrderItemMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/OrderMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/PayInfoMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/ProductMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/ShippingMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/UserMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/uautotime.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/zfbinfo.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/dispatcher-servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mmall/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/CartController.class" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/CartController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mmall.war" afterPath="$PROJECT_DIR$/target/mmall.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/alipay/demo/trade/DemoHbRunner.java" afterPath="$PROJECT_DIR$/src/main/Java/com/alipay/demo/trade/DemoHbRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/CategoryServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/CategoryServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/ProductServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/ProductServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/CartController.java" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/CartController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserController.java" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserController.java" />
     </list>
     <ignored path="uautotime.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -280,47 +71,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/ProductServiceImpl.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="222" column="0" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/CategoryServiceImpl.java">
+      <file leaf-file-name="ShippingController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/ShippingController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Const.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java">
+      <file leaf-file-name="CartController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/CartController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java">
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="8.972973">
-              <caret line="460" column="0" selection-start-line="460" selection-start-column="0" selection-end-line="460" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.1007371">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -380,7 +175,6 @@
         <option value="$PROJECT_DIR$/target/classes/mappers/CartMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/CartServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/service/ICartService.java" />
-        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/CartController.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/dao/ShippingMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/ShippingServiceImpl.java" />
@@ -417,11 +211,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/uautotime.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/Java/com/alipay/demo/trade/DemoHbRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java" />
+        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/CartController.java" />
+        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserController.java" />
       </list>
     </option>
   </component>
@@ -609,8 +404,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1871,12 +1666,13 @@
       <workItem from="1563709232784" duration="2250000" />
       <workItem from="1563783593858" duration="5021000" />
       <workItem from="1563848983199" duration="4409000" />
-      <workItem from="1563853890061" duration="1255000" />
+      <workItem from="1563853890061" duration="1892000" />
+      <workItem from="1563855985010" duration="956000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="488189000" />
+    <option name="totallyTimeSpent" value="489782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1900,7 +1696,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285061" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.2920792" sideWeight="0.49485293" order="2" side_tool="false" content_ui="tabs" x="24" y="411" width="1312" height="270" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.2920792" sideWeight="0.49485293" order="2" side_tool="false" content_ui="tabs" x="24" y="454" width="1312" height="227" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27722773" sideWeight="0.49558824" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1973,20 +1769,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/dao/OrderItemMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7321739">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/IOrderService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69391304">
@@ -2071,7 +1853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30608696">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2133,14 +1914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03826087">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/ResponseCode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22956522">
@@ -2153,7 +1926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.1426086">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2161,7 +1933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2177,7 +1948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.92347825">
           <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2204,7 +1974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30608696">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2212,7 +1981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2626086">
           <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2243,7 +2011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.92347825">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2251,7 +2018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26782608">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2259,7 +2025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.4104347">
           <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2267,7 +2032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.0991304">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2275,7 +2039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30608696">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2283,7 +2046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2309,22 +2071,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19652174">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/ShippingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03826087">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-36.19355">
@@ -2337,7 +2083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.3286955">
           <caret line="322" column="0" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2345,27 +2090,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.6069565">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8034782">
+          <caret line="460" column="0" selection-start-line="460" selection-start-column="0" selection-end-line="460" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="222" column="0" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2379,10 +2111,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/CategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.972973">
-          <caret line="460" column="0" selection-start-line="460" selection-start-column="0" selection-end-line="460" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.88">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.493913">
+          <caret line="222" column="0" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/ShippingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.1007371">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>
