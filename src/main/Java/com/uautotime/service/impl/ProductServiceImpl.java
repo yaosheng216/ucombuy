@@ -103,7 +103,7 @@ public class ProductServiceImpl implements IProductService {
         productDetailVo.setStatus(product.getStatus());
         productDetailVo.setStock(product.getStock());
 
-        productDetailVo.setImageHsost(PropertiesUtil.getProperty("ftp.server.http.prefix","http://img.happymmall.com/"));
+        productDetailVo.setImageHsost(PropertiesUtil.getProperty("ftp.server.http.prefix","http://img.ucombuy.com/"));
         Category category = categoryMapper.selectByPrimaryKey(product.getCategoryId());
         if(category == null){
             productDetailVo.setParentCategoryId(0);    //默认根节点
@@ -125,14 +125,14 @@ public class ProductServiceImpl implements IProductService {
 
         List<ProductListVo> productListVoList = Lists.newArrayList();
         for(Product productItem : productList){
-            ProductListVo productListVo = assembleProductDetailVo(productItem);
+            ProductListVo productListVo = assembleProductListVo(productItem);
         }
         PageInfo pageResult = new PageInfo(productList);
         pageResult.setList(productListVoList);
         return ServerResponse.creatBySuccess(pageResult);
     }
 
-    private ProductListVo assembleProductDetailVo(Product product){
+    private ProductListVo assembleProductListVo(Product product){
 
         ProductListVo productListVo = new ProductListVo();
         productListVo.setId(product.getId());
@@ -154,7 +154,7 @@ public class ProductServiceImpl implements IProductService {
         List<Product> productList = productMapper.selectByNameAndProductId(productName,productId);
         List<ProductListVo> productListVoList = Lists.newArrayList();
         for(Product productItem : productList){
-            ProductListVo productListVo = assembleProductDetailVo(productItem);
+            ProductListVo productListVo = assembleProductListVo(productItem);
             productListVoList.add(productListVo);
         }
 
