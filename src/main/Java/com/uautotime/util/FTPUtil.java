@@ -1,6 +1,5 @@
 package com.uautotime.util;
 
-import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPSClient;
 import org.slf4j.Logger;
@@ -27,6 +26,7 @@ public class FTPUtil {
         this.user = user;
         this.pwd = pwd;
     }
+
     public static boolean uploadFile(List<File> fileList) throws IOException {
         FTPUtil ftpUtil = new FTPUtil(ftpIp,21,ftpUser,ftpPass);
         logger.info("开始链结FTP服务器");

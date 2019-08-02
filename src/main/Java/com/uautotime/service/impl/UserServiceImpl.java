@@ -34,13 +34,13 @@ public class UserServiceImpl implements IUserService {
         if (user == null) {
             return ServerResponse.creatByErrorMessage("密码错误");
         }
-
-        user.setPassword(org.apache.commons.lang3.StringUtils.EMPTY);
+        user.setPassword(org.apache.commons.lang3.StringUtils.EMPTY);         //将登陆的密码制成空
         return ServerResponse.creatBySuccess("登陆成功", user);
 
     }
 
     public ServerResponse<String> register(User user) {
+
         ServerResponse validResponse = this.checkVaild(user.getUsername(), Const.USERNAME);
         if (!validResponse.isSuccess()) {
             return validResponse;
@@ -49,7 +49,6 @@ public class UserServiceImpl implements IUserService {
         if (!validResponse.isSuccess()) {
             return validResponse;
         }
-
         user.setRole(Const.Role.ROLE_CUSTOMER);
         //MD5加密
         user.setPassword(MD5Util.MD5EncodeUtf8(user.getPassword()));
@@ -61,6 +60,7 @@ public class UserServiceImpl implements IUserService {
     }
 
     public ServerResponse<String> checkVaild(String str, String type) {
+        //type值进行判断，判断str是调用用户名还是Email
         if (org.apache.commons.lang3.StringUtils.isNoneBlank(type)) {
             //开始校验
             if (Const.USERNAME.equals(type)) {
@@ -69,9 +69,9 @@ public class UserServiceImpl implements IUserService {
                     return ServerResponse.creatByErrorMessage("用户名已存在");
                 }
             }
+
             if (Const.EMAIL.equals(type)) {
                 int resultCount = userMapper.checkEmail(str);
-
                 if (resultCount > 0) {
                     return ServerResponse.creatByErrorMessage("Email已存在");
                 }
@@ -89,11 +89,10 @@ public class UserServiceImpl implements IUserService {
             //用户不存在
             return ServerResponse.creatByErrorMessage("用户不存在");
         }
-        String  question = userMapper.selectQuestionByUsername(username);
+        String question = userMapper.selectQuestionByUsername(username);
         if(org.apache.commons.lang3.StringUtils.isNoneBlank(question)){
             return ServerResponse.creatBySuccess(question);
         }
-
         return ServerResponse.creatByErrorMessage("找回密码的问题是错误的");
     }
 
@@ -110,6 +109,7 @@ public class UserServiceImpl implements IUserService {
     }
 
     public ServerResponse<String> forgetResetPassword(String username,String passwordNew,String forgetToken){
+
         if(org.apache.commons.lang3.StringUtils.isBlank(forgetToken)){
             return ServerResponse.creatByErrorMessage("参数错误，token需要传递");
         }
@@ -118,17 +118,13 @@ public class UserServiceImpl implements IUserService {
             //用户不存在
             return ServerResponse.creatByErrorMessage("用户不存在");
         }
-
         String token = TokenCache.getKey(TokenCache.TOKEN_PREFIX+username);
         if(org.apache.commons.lang3.StringUtils.isBlank(token)){
             return ServerResponse.creatByErrorMessage("token无效或者过期");
         }
-
         if(org.apache.commons.lang3.StringUtils.equals(forgetToken,token)) {
             String md5Password = MD5Util.MD5EncodeUtf8(passwordNew);
             int rowCount = userMapper.updatePasswordByUsername(username, md5Password);
-
-
             if (rowCount > 0) {
                 return ServerResponse.creatBySuccessMessage("密码修改成功");
             }
@@ -137,8 +133,7 @@ public class UserServiceImpl implements IUserService {
             }
             return ServerResponse.creatByErrorMessage("修改密码失败");
         }
-
-
+    
     public ServerResponse<String> resetPassword(String passwordOld,String passwordNew,User user){
         //防止横向越权，要校验一下这个用户的旧密码，一定要指定是这个用户，因为我们会查询一个count(1)，如果不指定id，那么结果就是true啦
         int resultCount = userMapper.checkPassword(MD5Util.MD5EncodeUtf8(passwordOld),user.getId());
@@ -176,6 +171,7 @@ public class UserServiceImpl implements IUserService {
     }
 
     public ServerResponse<User> getInformation(Integer userId){
+
         User user = userMapper.selectByPrimaryKey(userId);
         if(user == null){
             return ServerResponse.creatByErrorMessage("找不到当前用户");
@@ -192,6 +188,7 @@ public class UserServiceImpl implements IUserService {
      * @return
      */
     public ServerResponse checkAdminRole(User user){
+
         if(user != null && user.getRole().intValue() == Const.Role.ROLE_ADMIN){
             return ServerResponse.creatBySuccess();
         }

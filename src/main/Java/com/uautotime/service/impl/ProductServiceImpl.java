@@ -39,6 +39,7 @@ public class ProductServiceImpl implements IProductService {
     private ICategoryService iCategoryService;
 
     public ServerResponse saveOrUpdateProduct(Product product){
+
         if (product != null) {
             if (StringUtils.isNotBlank(product.getSubImages())) {
                 String[] subImageArray = product.getSubImages().split(",");
@@ -64,6 +65,7 @@ public class ProductServiceImpl implements IProductService {
     }
 
     public ServerResponse<String> setSaleStatus(Integer productId,Integer status){
+
         if(productId == null || status == null){
             return ServerResponse.creatByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(),ResponseCode.ILLEGAL_ARGUMENT.getDesc());
         }
@@ -78,6 +80,7 @@ public class ProductServiceImpl implements IProductService {
     }
 
     public ServerResponse<ProductDetailVo> manageProductDetail(Integer productId) {
+
         if (productId == null) {
             return ServerResponse.creatByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(), ResponseCode.ILLEGAL_ARGUMENT.getDesc());
         }
@@ -144,9 +147,11 @@ public class ProductServiceImpl implements IProductService {
         productListVo.setSubtitle(product.getSubtitle());
         productListVo.setStatus(product.getStatus());
         return productListVo;
+
     }
 
     public ServerResponse<PageInfo> searchProduct(String productName,Integer productId,int pageNum,int pageSize){
+
         PageHelper.startPage(pageNum,pageSize);
         if(StringUtils.isNotBlank(productName)){
             productName = new StringBuilder().append("%").append(productName).append("%").toString();
@@ -165,6 +170,7 @@ public class ProductServiceImpl implements IProductService {
     }
 
     public ServerResponse<ProductDetailVo> getProductDetail(Integer productId ){
+
         if(productId == null){
             return ServerResponse.creatByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(),ResponseCode.ILLEGAL_ARGUMENT.getDesc());
         }
@@ -180,6 +186,7 @@ public class ProductServiceImpl implements IProductService {
     }
 
     public ServerResponse<PageInfo> getProductByKeywordCategory(String keyword,Integer categoryId,int pageNum,int pageSize,String orderBy){
+
         if(StringUtils.isBlank(keyword) && categoryId == null){
             return ServerResponse.creatByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(),ResponseCode.ILLEGAL_ARGUMENT.getDesc());
         }

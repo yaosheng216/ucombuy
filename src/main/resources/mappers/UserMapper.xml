@@ -164,7 +164,6 @@
 
   <select id="selectLogin" resultMap="BaseResultMap" parameterType="map">
     SELECT
-    *???//这样真的好么?
     <include refid="Base_Column_List" />
     from mmall_user
     where username = #{username}

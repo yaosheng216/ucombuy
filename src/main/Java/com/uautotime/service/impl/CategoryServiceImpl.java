@@ -61,7 +61,7 @@ public class CategoryServiceImpl implements ICategoryService {
 
     public ServerResponse<List<Category>> getChildrenParallelCategory(Integer categoryId){
         List<Category> categoryList = categoryMapper.selectCategoryChilerenByParentId(categoryId);
-        if(CollectionUtils.isEmpty(categoryList)){
+        if(CollectionUtils.isEmpty(categoryList)){                  //判断集合是否为空
             logger.info("未找到当前分类的子分类");
         }
         return ServerResponse.creatBySuccess(categoryList);

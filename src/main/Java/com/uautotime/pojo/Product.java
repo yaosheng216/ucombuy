@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class Product {
+
     private Integer id;
 
     private Integer categoryId;

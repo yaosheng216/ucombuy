@@ -23,7 +23,6 @@ public class UserController {
     @Autowired
     private IUserService iUserService;
 
-
     /**
      * 用户登录
      * @param username
@@ -33,7 +32,8 @@ public class UserController {
      */
     @RequestMapping(value = "login.do",method= RequestMethod.POST)
     @ResponseBody
-    public ServerResponse<User> login (String username, String password, HttpSession session){
+    public ServerResponse<User> login(String username, String password,HttpSession session){
+
         ServerResponse<User> response = iUserService.login(username,password);
         if(response.isSuccess()){
             session.setAttribute(Const.CURRENT_USER,response.getData());

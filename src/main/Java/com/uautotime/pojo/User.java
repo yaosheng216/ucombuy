@@ -3,6 +3,7 @@ package com.uautotime.pojo;
 import java.util.Date;
 
 public class User {
+
     private Integer id;
 
     private String username;
@@ -119,4 +120,5 @@ public class User {
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
+
 }
