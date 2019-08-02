@@ -10,7 +10,10 @@ MyBatis(MyBatis-generator、MyBatis-plugin、pagerHelp)
 
 
 #### 安装教程
+
 learning.happymmall.com
+
+项目具体代码请切换分支至v1.0
 
 
 #### 码云特技
