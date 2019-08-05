@@ -14,7 +14,7 @@ public class ServerResponse<T> implements Serializable {
 
     private int status;             //返回状态0或1
     private String msg;             //返回状态（成功或者失败）
-    private T data;                 //发那会成功信息
+    private T data;                 //返回成功的信息
 
     private ServerResponse(int status) {
         this.status=status;

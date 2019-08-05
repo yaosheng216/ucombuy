@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class OrderItem {
+
     private Integer id;
 
     private Integer userId;

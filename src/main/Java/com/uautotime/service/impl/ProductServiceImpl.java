@@ -105,15 +105,14 @@ public class ProductServiceImpl implements IProductService {
         productDetailVo.setName(product.getName());
         productDetailVo.setStatus(product.getStatus());
         productDetailVo.setStock(product.getStock());
-
         productDetailVo.setImageHsost(PropertiesUtil.getProperty("ftp.server.http.prefix","http://img.ucombuy.com/"));
+
         Category category = categoryMapper.selectByPrimaryKey(product.getCategoryId());
         if(category == null){
             productDetailVo.setParentCategoryId(0);    //默认根节点
         }else{
             productDetailVo.setParentCategoryId(category.getParentId());
         }
-
         productDetailVo.setCreateTime(DateTimeUtil.dateToStr(product.getCreateTime()));
         productDetailVo.setUpdateTime(DateTimeUtil.dateToStr(product.getUpdateTime()));
         return productDetailVo;

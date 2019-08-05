@@ -140,7 +140,6 @@ public class UserServiceImpl implements IUserService {
         if(resultCount == 0){
             return ServerResponse.creatByErrorMessage("旧密码错误");
         }
-
         user.setPassword(MD5Util.MD5EncodeUtf8(passwordNew));
         int updateCount = userMapper.updateByPrimaryKeySelective(user);
         if(updateCount > 0){
@@ -152,7 +151,7 @@ public class UserServiceImpl implements IUserService {
     public ServerResponse<User> updateInformation(User user){
         //username是不能被更新的
         //email也要进行一个校验，检验新的email是不是已经存在，并且存在的email相同的话，不能是我们当前这个用户的
-        int resultCount = userMapper.checkEmailBuUserId(user.getEmail(),user.getId());
+        int resultCount = userMapper.checkEmailByUserId(user.getEmail(),user.getId());
         if(resultCount > 0){
             return ServerResponse.creatByErrorMessage("Email已存在，请更换Email并重新输入");
         }
@@ -188,7 +187,6 @@ public class UserServiceImpl implements IUserService {
      * @return
      */
     public ServerResponse checkAdminRole(User user){
-
         if(user != null && user.getRole().intValue() == Const.Role.ROLE_ADMIN){
             return ServerResponse.creatBySuccess();
         }

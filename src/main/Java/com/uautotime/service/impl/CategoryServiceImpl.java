@@ -48,6 +48,7 @@ public class CategoryServiceImpl implements ICategoryService {
         if(categoryId == null || StringUtils.isBlank(categoryName)){
             return ServerResponse.creatByErrorMessage("添加品类参数错误");
         }
+
         Category category = new Category();
         category.setId(categoryId);
         category.setName(categoryName);
@@ -61,7 +62,8 @@ public class CategoryServiceImpl implements ICategoryService {
 
     public ServerResponse<List<Category>> getChildrenParallelCategory(Integer categoryId){
         List<Category> categoryList = categoryMapper.selectCategoryChilerenByParentId(categoryId);
-        if(CollectionUtils.isEmpty(categoryList)){                  //判断集合是否为空
+        if(CollectionUtils.isEmpty(categoryList)){
+            //判断集合是否为空
             logger.info("未找到当前分类的子分类");
         }
         return ServerResponse.creatBySuccess(categoryList);
