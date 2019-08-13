@@ -6,7 +6,7 @@ import com.uautotime.pojo.Product;
 import com.uautotime.vo.ProductDetailVo;
 
 /**
- * Created by admin on 2019/5/8.
+ * Created by yaosheng on 2019/5/8.
  */
 public interface IProductService {
 

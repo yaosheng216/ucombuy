@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.math.BigDecimal;
 
 /**
- * Created by admin on 2019/5/17.
+ * Created by yaosheng on 2019/5/17.
  */
 public class BigDecimalTest {
 
@@ -21,6 +21,13 @@ public class BigDecimalTest {
     public void test2(){
         BigDecimal b1 = new BigDecimal(0.05);
         BigDecimal b2 = new BigDecimal(0.01);
+        System.out.println(b1.add(b2));
+    }
+
+    @Test
+    public void test3(){
+        BigDecimal b1 = new BigDecimal("0.05");
+        BigDecimal b2 = new BigDecimal("0.01");
         System.out.println(b1.add(b2));
     }
 

@@ -6,10 +6,9 @@ import com.google.common.cache.LoadingCache;
 import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Logger;
 
 /**
- * Created by admin on 2019/4/28.
+ * Created by yaosheng on 2019/4/28.
  */
 public class TokenCache {
 

@@ -3,7 +3,7 @@ package com.uautotime.vo;
 import java.math.BigDecimal;
 
 /**
- * Created by admin on 2019/5/9.
+ * Created by yaosheng on 2019/5/9.
  */
 public class ProductListVo {
 

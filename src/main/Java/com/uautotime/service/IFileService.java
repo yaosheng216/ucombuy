@@ -3,7 +3,7 @@ package com.uautotime.service;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * Created by admin on 2019/5/10.
+ * Created by yaosheng on 2019/5/10.
  */
 public interface IFileService {
 

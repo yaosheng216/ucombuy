@@ -3,7 +3,7 @@ package com.uautotime.util;
 import java.security.MessageDigest;
 
 /**
- * Created by admin on 2019/4/25.
+ * Created by yaosheng on 2019/4/25.
  */
 public class MD5Util {
 

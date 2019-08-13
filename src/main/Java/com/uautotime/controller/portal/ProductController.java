@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * Created by admin on 2019/5/11.
+ * Created by yaosheng on 2019/5/11.
  */
 @Controller
 @RequestMapping("/product/")

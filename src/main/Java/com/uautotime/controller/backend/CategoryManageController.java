@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpSession;
 
 /**
- * Created by admin on 2019/5/6.
+ * Created by yaosheng on 2019/5/6.
  */
 @Controller
 @RequestMapping("/manage/category")

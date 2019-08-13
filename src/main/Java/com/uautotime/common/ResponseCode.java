@@ -1,7 +1,7 @@
 package com.uautotime.common;
 
 /**
- * Created by admin on 2019/4/25.
+ * Created by yaosheng on 2019/4/25.
  */
 public enum ResponseCode {
 

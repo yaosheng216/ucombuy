@@ -6,7 +6,7 @@ import com.uautotime.pojo.Category;
 import java.util.List;
 
 /**
- * Created by admin on 2019/5/6.
+ * Created by yaosheng on 2019/5/6.
  */
 public interface ICategoryService {
 

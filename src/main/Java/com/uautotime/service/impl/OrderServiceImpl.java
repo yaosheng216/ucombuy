@@ -39,7 +39,7 @@ import java.math.BigDecimal;
 import java.util.*;
 
 /**
- * Created by admin on 2019/6/9.
+ * Created by yaosheng on 2019/6/9.
  */
 public class OrderServiceImpl implements IOrderService {
 
@@ -105,8 +105,8 @@ public class OrderServiceImpl implements IOrderService {
         orderVo.setPostage(order.getPostage());
         orderVo.setStatus(order.getStatus());
         orderVo.setStatusDesc(Const.OrderStatusEnum.codeOf(order.getStatus()).getValue());
-
         orderVo.setShippingId(order.getShippingId());
+
         Shipping shipping = shippingMapper.selectByPrimaryKey(order.getShippingId());
         if(shipping != null){
             orderVo.setReceiverName(shipping.getReceiverName());

@@ -4,7 +4,7 @@ import com.uautotime.common.ServerResponse;
 import com.uautotime.pojo.User;
 
 /**
- * Created by admin on 2019/4/25.
+ * Created by yaoosheng on 2019/4/25.
  */
 public interface IUserService {
 

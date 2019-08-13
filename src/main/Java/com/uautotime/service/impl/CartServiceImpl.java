@@ -22,7 +22,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
- * Created by admin on 2019/5/16.
+ * Created by yaosheng on 2019/5/16.
  */
 @Service("iCartService")
 public class CartServiceImpl implements ICartService {
@@ -43,7 +43,7 @@ public class CartServiceImpl implements ICartService {
         if (cart == null) {
             //说明这个产品不在购物车里，需要新增一个这个产品的记录
             Cart cartItem = new Cart();
-            cartItem.setQuantity(count);
+            cartItem.setQuantity(count);                      //产品数量
             cartItem.setChecked(Const.Cart.CHECKED);
             cartItem.setProductId(productId);
             cartItem.setUserId(userId);
@@ -54,9 +54,10 @@ public class CartServiceImpl implements ICartService {
             //如果产品已存在，数量相加
             count = cart.getQuantity() + count;
             cart.setQuantity(count);
+
             cartMapper.updateByPrimaryKeySelective(cart);
         }
-        return  this.list(userId);
+        return this.list(userId);
     }
 
     public ServerResponse<CartVo> update(Integer userId, Integer productId, Integer count){

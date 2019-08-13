@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.UUID;
 
 /**
- * Created by admin on 2019/5/10.
+ * Created by yaosheng on 2019/5/10.
  */
 @Service("iFileService")
 public class FileServiceImpl implements IFileService {
@@ -24,13 +24,13 @@ public class FileServiceImpl implements IFileService {
         String fileName = file.getOriginalFilename();
         //扩展名
         //abc.jpg
-        String fileExtensionName = fileName.substring(fileName.lastIndexOf(".")+1);
-        String uploadFileName = UUID.randomUUID().toString()+"."+fileExtensionName;
+        String fileExtensionName = fileName.substring(fileName.lastIndexOf(".")+1);             //获取文件扩展名
+        String uploadFileName = UUID.randomUUID().toString()+"."+fileExtensionName;             //使用UUID防止文件重名
         logger.info("开始上传文件,上传文件的文件名:{},上传的路径:{},新文件名:{}",fileName,path,uploadFileName);
 
         File fileDir = new File((path));
-        if(!fileDir.exists()){
-            fileDir.setWritable(true);
+        if(!fileDir.exists()){                          //exists()判断文件是否存在
+            fileDir.setWritable(true);                  //赋予文件可写的权限
             fileDir.mkdirs();
         }
         File targetFile = new File(path,uploadFileName);

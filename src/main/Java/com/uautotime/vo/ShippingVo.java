@@ -1,7 +1,7 @@
 package com.uautotime.vo;
 
 /**
- * Created by admin on 2019/6/13.
+ * Created by yaosheng on 2019/6/13.
  */
 public class ShippingVo {
 

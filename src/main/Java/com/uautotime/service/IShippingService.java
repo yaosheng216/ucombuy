@@ -5,7 +5,7 @@ import com.uautotime.common.ServerResponse;
 import com.uautotime.pojo.Shipping;
 
 /**
- * Created by admin on 2019/5/19.
+ * Created by yaosheng on 2019/5/19.
  */
 public interface IShippingService {
 

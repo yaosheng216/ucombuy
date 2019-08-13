@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by admin on 2019/5/8.
+ * Created by yaosheng on 2019/5/8.
  */
 @Service("iProductService")
 public class ProductServiceImpl implements IProductService {
@@ -210,7 +210,7 @@ public class ProductServiceImpl implements IProductService {
         //排序处理
         if(StringUtils.isNotBlank(orderBy)){
             if(Const.ProductListOrderBy.PRICE_ASC_DESC.contains(orderBy)){
-                String[] orderByArray = orderBy.split("_");
+                String[] orderByArray = orderBy.split("_");                          //使用split进行分割
                 PageHelper.orderBy(orderByArray[0]+" "+orderByArray[1]);
             }
         }

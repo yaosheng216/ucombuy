@@ -156,13 +156,13 @@
       and product_id = #{productId}
     </if>
   </update>
-  <select id="selectCartProductCount" parameterType="int" resultType="int">
+  <select id="selectCartProductCount" resultType="int" parameterType="int">
     SELECT
     IFNULL(SUM (quantity),0) as COUNT
     from mmall_cart
     where user_id = #{userId}
   </select>
-  <select id="selectCheckedCartByUserId" parameterType="int" resultMap="BaseResultMap">
+  <select id="selectCheckedCartByUserId" resultMap="BaseResultMap" parameterType="int">
     SELECT
     <include refid="Base_Column_List"/>
     from mall_cart
