@@ -9,8 +9,7 @@ import com.uautotime.common.ResponseCode;
 import com.uautotime.common.ServerResponse;
 import com.uautotime.pojo.User;
 import com.uautotime.service.IOrderService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,9 +26,8 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping("/order/")
+@Slf4j
 public class OrderController {
-
-    private static final Logger logger = LoggerFactory.getLogger(OrderController.class);
 
     @Autowired
     private IOrderService iOrderService;
@@ -110,7 +108,7 @@ public class OrderController {
             }
             params.put(name, valueStr);
         }
-        logger.info("支付宝回调,sign:{},trade_status:{},参数:{}", params.get("sign"), params.get("trade_status"), params.toString());
+        log.info("支付宝回调,sign:{},trade_status:{},参数:{}", params.get("sign"), params.get("trade_status"), params.toString());
         //验证回调的正确性，是否为支付宝所发，并且避免重复通知
 
         params.remove("sign_type");
@@ -121,7 +119,7 @@ public class OrderController {
                 return ServerResponse.creatByErrorMessage("非法请求，验证未通过");
             }
         } catch (AlipayApiException e) {
-            logger.error("支付宝回调异常", e);
+            log.error("支付宝回调异常", e);
         }
 
         //todo 验证各种数据

@@ -1,6 +1,14 @@
 <component name="ArtifactManager">
   <artifact type="war" name="uautotime:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="uautotime.war" />
+    <properties id="maven-jee-properties">
+      <options>
+        <module>uautotime</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="uautotime.war">
+      <element id="artifact" artifact-name="uautotime:war exploded" />
+    </root>
   </artifact>
 </component>

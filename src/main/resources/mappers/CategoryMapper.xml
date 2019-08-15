@@ -119,8 +119,8 @@
 
   <select id = "selectCategoryChilerenByParentId" resultMap="BaseResultMap" parameterType="int">
     SELECT
-    <include refid="Base_Column_List/>"
+    <include refid="Base_Column_List" />
     from mmall_category
-    where parent_id = #{parentId}
+    where parent_id=#{parentid}
   </select>
 </mapper>
