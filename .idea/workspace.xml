@@ -9,34 +9,152 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93070ad5-ee5c-4e6c-bfdb-a70c36a10037" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/uautotime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/uautotime_archive.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/uautotime_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources.dev/datasource.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources.dev/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources.dev/uautotime.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources.dev/zfbinfo.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources.prod/datasource.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources.prod/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources.prod/uautotime.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources.prod/zfbinfo.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/uautotime_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/uautotime_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/uautotime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/uautotime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/uautotime_archive.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/uautotime_archive.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/uautotime_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/uautotime_war_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/applicationContext-datasource.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/alipay/demo/trade/DemoHbRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/alipay/demo/trade/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/alipay/demo/trade/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/common/Const$AlipayCallback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/common/Const$Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/common/Const$OrderStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/common/Const$PayPlatformEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/common/Const$PaymentTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/common/Const$ProductListOrderBy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/common/Const$ProductStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/common/Const$Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/common/Const.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/common/ResponseCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/common/ServerResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/common/TokenCache$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/common/TokenCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/controller/backend/CategoryManageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/controller/backend/OrderManageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/controller/backend/ProductManageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/controller/backend/UserManageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/controller/portal/CartController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/controller/portal/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/controller/portal/ProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/controller/portal/ShippingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/controller/portal/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/dao/CartMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/dao/CategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/dao/OrderItemMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/dao/OrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/dao/PayInfoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/dao/ProductMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/dao/ShippingMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/dao/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/pojo/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/pojo/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/pojo/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/pojo/OrderItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/pojo/PayInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/pojo/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/pojo/Shipping.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/ICartService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/ICategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/IFileService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/IOrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/IProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/IShippingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/IUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/impl/CartServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/impl/CategoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/impl/FileServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/impl/OrderServiceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/impl/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/impl/ProductServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/impl/ShippingServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/util/BigDecimalUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/util/DateTimeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/util/FTPUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/util/MD5Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/util/PropertiesUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/vo/CartProductVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/vo/CartVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/vo/OrderItemVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/vo/OrderProductVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/vo/OrderVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/vo/ProductDetailVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/vo/ProductListVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/com/uautotime/vo/ShippingVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/datasource.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/mappers/CartMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/mappers/CategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/mappers/OrderItemMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/mappers/OrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/mappers/PayInfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/mappers/ProductMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/mappers/ShippingMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/mappers/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/uautotime.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/classes/zfbinfo.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/alipay-sdk-java-3.6.0.ALL-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/alipay-sdk-java-3.6.0.ALL.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/alipay-trade-sdk-20161215-source.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/alipay-trade-sdk-20161215.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/aspectjrt-1.6.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/aspectjweaver-1.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/commons-collections-3.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/commons-configuration-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/commons-dbcp-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/commons-fileupload-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/commons-io-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/commons-lang3-3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/commons-logging-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/commons-net-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/commons-pool-1.5.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/commons-pool2-2.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/core-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/gson-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/guava-20.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/hashids-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/jackson-core-asl-1.9.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/jackson-mapper-asl-1.9.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/jedis-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/joda-time-2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/jsqlparser-0.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/junit-4.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/logback-classic-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/logback-core-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/lombok-1.18.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/mybatis-3.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/mybatis-paginator-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/mybatis-spring-1.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/mysql-connector-java-5.1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/pagehelper-4.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/slf4j-api-1.7.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/spring-aop-4.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/spring-beans-4.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/spring-context-4.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/spring-core-4.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/spring-expression-4.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/spring-jdbc-4.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/spring-oxm-4.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/spring-test-4.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/spring-tx-4.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/spring-web-4.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/lib/spring-webmvc-4.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/uautotime/index.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/datasource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources.beta/datasource.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources.beta/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/uautotime.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources.beta/uautotime.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/zfbinfo.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources.beta/zfbinfo.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mappers/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uautotime.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uautotime.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/mmall/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/OrderController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uautotime.iml" beforeDir="false" afterPath="$PROJECT_DIR$/uautotime.iml" afterDir="false" />
     </list>
     <ignored path="uautotime.iws" />
@@ -57,25 +175,42 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="uautotime" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/OrderController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/ServerResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/backend/OrderManageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+            <state relative-caret-position="92">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding>
+                <element signature="e#547#548#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#1006#1007#0" expanded="true" />
+                <element signature="e#1074#1075#0" expanded="true" />
+                <element signature="e#1103#1104#0" expanded="true" />
+                <element signature="e#1132#1133#0" expanded="true" />
+                <element signature="e#1157#1158#0" expanded="true" />
+                <element signature="e#1184#1185#0" expanded="true" />
+                <element signature="e#1210#1211#0" expanded="true" />
+                <element signature="e#1236#1237#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,26 +218,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-391">
-              <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+            <state relative-caret-position="69">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/ProductServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+            <state relative-caret-position="69">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/dao/CartMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="713">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -124,7 +268,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/ShippingController.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/CartServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/ProductServiceImpl.java" />
@@ -166,15 +309,16 @@
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/FileServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources.beta/uautotime.properties" />
         <option value="$PROJECT_DIR$/src/main/resources.dev/uautotime.properties" />
         <option value="$PROJECT_DIR$/src/main/resources.prod/uautotime.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/vo/NetilVo.java" />
         <option value="$PROJECT_DIR$/src/test/Java/com/uautotime/test/ControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/dao/CategoryMapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -203,7 +347,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1376" />
@@ -217,8 +361,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -368,20 +510,23 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;Preferences&#9;PSI&#9;JAVA://java.util.prefs.Preferences" />
+    <property name="ToolWindowJava Enterprise.ShowToolbar" value="false" />
     <property name="ToolWindowMessages.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565843684836" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565852421030" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15458015" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -724,7 +869,18 @@
       <workItem from="1565839054488" duration="494000" />
       <workItem from="1565839904414" duration="52000" />
       <workItem from="1565840040841" duration="2750000" />
-      <workItem from="1565843189790" duration="420000" />
+      <workItem from="1565843189790" duration="1451000" />
+      <workItem from="1565846334504" duration="742000" />
+      <workItem from="1565848580983" duration="1453000" />
+      <workItem from="1565851390480" duration="1134000" />
+      <workItem from="1565852724541" duration="377000" />
+      <workItem from="1565853235328" duration="140000" />
+      <workItem from="1565853416057" duration="210000" />
+      <workItem from="1565853665179" duration="78000" />
+      <workItem from="1565853781996" duration="114000" />
+      <workItem from="1565853930485" duration="293000" />
+      <workItem from="1565854259971" duration="343000" />
+      <workItem from="1565854680743" duration="510000" />
     </task>
     <servers />
   </component>
@@ -743,24 +899,24 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78192000" />
+    <option name="totallyTimeSpent" value="84617000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" order="0" />
       <window_info id="Web" order="1" side_tool="true" weight="0.3292683" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="4" weight="0.22112462" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.23404256" />
       <window_info id="Structure" order="5" weight="0.25" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.32786885" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.33663365" />
-      <window_info anchor="bottom" id="Java Enterprise" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5030488" side_tool="true" weight="0.32786885" />
+      <window_info active="true" anchor="bottom" id="Run" order="0" sideWeight="0.49772036" visible="true" weight="0.32786885" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.33606556" />
+      <window_info anchor="bottom" id="Java Enterprise" order="2" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="3" show_stripe_button="false" sideWeight="0.50227964" side_tool="true" weight="0.32786885" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49695122" weight="0.32786885" />
       <window_info anchor="bottom" id="Application Servers" order="5" weight="0.32838285" />
       <window_info anchor="bottom" id="Version Control" order="6" />
@@ -777,13 +933,13 @@
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.3292683" />
       <window_info anchor="right" id="Coverage" order="2" weight="0.3292683" />
       <window_info anchor="right" id="Designer" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Commander" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.32978722" />
+      <window_info anchor="right" id="Commander" order="4" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Maven" order="9" weight="0.32978722" />
+      <window_info anchor="right" id="Database" order="10" weight="0.32978722" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -802,13 +958,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/vo/ProductDetailVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/vo/ProductListVo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -827,13 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="223" column="22" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/ServerResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -890,7 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,9 +1091,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CartMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/OrderItemMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -975,53 +1113,8 @@
     <entry file="file://$PROJECT_DIR$/target/classes/mappers/CartMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/dao/CategoryMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="119" column="2" selection-start-line="119" selection-start-column="2" selection-end-line="119" selection-end-column="2" />
-          <folding>
-            <marker date="1565771907965" expanded="true" signature="1081:1191" ph="..." />
-            <marker date="1565771907965" expanded="true" signature="1277:1341" ph="..." />
-            <marker date="1565771907965" expanded="true" signature="1425:1707" ph="..." />
-            <marker date="1565771907965" expanded="true" signature="3040:3670" ph="..." />
-            <marker date="1565771907965" expanded="true" signature="3766:4083" ph="..." />
-            <marker date="1565771907965" expanded="true" signature="4198:4269" ph="..." />
-            <marker date="1565771907965" expanded="true" signature="4198:4301" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/mappers/CategoryMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="207" column="2" selection-start-line="207" selection-start-column="2" selection-end-line="207" selection-end-column="2" />
-          <folding>
-            <marker date="1565775761130" expanded="true" signature="1324:1430" ph="..." />
-            <marker date="1565775761130" expanded="true" signature="1516:1576" ph="..." />
-            <marker date="1565775761130" expanded="true" signature="1656:2056" ph="..." />
-            <marker date="1565775761130" expanded="true" signature="3801:4696" ph="..." />
-            <marker date="1565775761130" expanded="true" signature="4788:5230" ph="..." />
-            <marker date="1565775761130" expanded="true" signature="5319:5383" ph="..." />
-            <marker date="1565775761130" expanded="true" signature="5469:5527" ph="..." />
-            <marker date="1565775761130" expanded="true" signature="5619:5750" ph="..." />
-            <marker date="1565775761130" expanded="true" signature="5852:5924" ph="..." />
-            <marker date="1565775761130" expanded="true" signature="6007:6137" ph="..." />
-            <marker date="1565775761130" expanded="true" signature="6218:6322" ph="..." />
-            <marker date="1565775761130" expanded="true" signature="6409:6504" ph="..." />
-            <marker date="1565775761130" expanded="true" signature="6596:6678" ph="..." />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/dao/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1042,13 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
         </state>
       </provider>
     </entry>
@@ -1087,13 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/dao/CartMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/pojo/Cart.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1102,48 +1181,137 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/vo/NetilVo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/ProductServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        <state relative-caret-position="92">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/com/uautotime/test/ControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/ProductServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="138">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/com/uautotime/test/ControllerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/backend/OrderManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/backend/OrderManageController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        <state relative-caret-position="547">
+          <caret line="207" selection-start-line="207" selection-end-line="207" />
+          <folding>
+            <marker date="1565775761130" expanded="true" signature="1324:1430" ph="..." />
+            <marker date="1565775761130" expanded="true" signature="1516:1576" ph="..." />
+            <marker date="1565775761130" expanded="true" signature="1656:2056" ph="..." />
+            <marker date="1565775761130" expanded="true" signature="3801:4696" ph="..." />
+            <marker date="1565775761130" expanded="true" signature="4788:5230" ph="..." />
+            <marker date="1565775761130" expanded="true" signature="5319:5383" ph="..." />
+            <marker date="1565775761130" expanded="true" signature="5469:5527" ph="..." />
+            <marker date="1565775761130" expanded="true" signature="5619:5750" ph="..." />
+            <marker date="1565775761130" expanded="true" signature="5852:5924" ph="..." />
+            <marker date="1565775761130" expanded="true" signature="6007:6137" ph="..." />
+            <marker date="1565775761130" expanded="true" signature="6218:6322" ph="..." />
+            <marker date="1565775761130" expanded="true" signature="6409:6504" ph="..." />
+            <marker date="1565775761130" expanded="true" signature="6596:6678" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/ServerResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <marker date="1565771907965" expanded="true" signature="1081:1191" ph="..." />
+            <marker date="1565771907965" expanded="true" signature="1277:1341" ph="..." />
+            <marker date="1565771907965" expanded="true" signature="1425:1707" ph="..." />
+            <marker date="1565771907965" expanded="true" signature="3040:3670" ph="..." />
+            <marker date="1565771907965" expanded="true" signature="3766:4083" ph="..." />
+            <marker date="1565771907965" expanded="true" signature="4198:4269" ph="..." />
+            <marker date="1565771907965" expanded="true" signature="4198:4301" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/dao/CategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6308">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CartMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+        <state relative-caret-position="271">
+          <caret line="164" column="2" selection-start-line="164" selection-start-column="2" selection-end-line="164" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/dao/CartMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        <state relative-caret-position="713">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
@@ -1153,7 +1321,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>uautotime archive</last-edited>
+          <last-edited>uautotime</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

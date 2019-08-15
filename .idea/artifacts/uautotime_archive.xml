@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="uautotime archive">
-    <output-path>$PROJECT_DIR$/out/artifacts/uautotime_archive</output-path>
+    <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="uautotime archive.war" />
   </artifact>
 </component>
