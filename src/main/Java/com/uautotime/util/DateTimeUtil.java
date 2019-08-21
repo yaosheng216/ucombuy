@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * Created by yaosheng on 2019/5/8.
  */
-public class DateTimeUtil {
+public class DateTimeUtil{
 
     //joda-time
     //str->date

@@ -15,7 +15,6 @@ import javax.servlet.http.HttpSession;
 /**
  * Created by yaosheng on 2019/4/28.
  */
-
 @Controller
 @RequestMapping("/manage/user")
 public class UserManageController {
