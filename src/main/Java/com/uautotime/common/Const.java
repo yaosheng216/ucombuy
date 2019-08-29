@@ -13,6 +13,10 @@ public class Const {
     public static final String EMAIL = "email";                         //当前登陆账号邮箱
     public static final String USERNAME = "username";                   //当前登陆用户名称
 
+    public interface RedisCacheExtime{
+        int REDIS_SESSION_EXTIM = 60*30;                                //session的有效期为30分钟
+    }
+    
     public interface ProductListOrderBy{
         Set<String> PRICE_ASC_DESC = Sets.newHashSet("price_desc","price_asc");
     }
