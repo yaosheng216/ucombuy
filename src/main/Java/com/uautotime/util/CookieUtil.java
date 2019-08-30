@@ -31,11 +31,11 @@ public class CookieUtil {
     }
 
     //X:domain=".ucombuy.com"
-    //a:A.ucombuy.com                    cookie:domain=A.ucombuy.com;path="/"
-    //b:A.ucombuy.com                    cookie:domain=B.ucombuy.com;path="/"
-    //c:A.ucombuy.com/test/cc            cookie:domain=C.ucombuy.com;path="/test/cc"
-    //d:A.ucombuy.com/test/dd            cookie:domain=D.ucombuy.com;path="/test/dd"
-    //e:A.ucombuy.com/test               cookie:domain=E.ucombuy.com;path="/test"
+    //a:a.ucombuy.com                    cookie:domain=A.ucombuy.com;path="/"
+    //b:b.ucombuy.com                    cookie:domain=B.ucombuy.com;path="/"
+    //c:c.ucombuy.com/test/cc            cookie:domain=C.ucombuy.com;path="/test/cc"
+    //d:d.ucombuy.com/test/dd            cookie:domain=D.ucombuy.com;path="/test/dd"
+    //e:e.ucombuy.com/test               cookie:domain=E.ucombuy.com;path="/test"
 
     public static void writeLoginToken(HttpServletResponse response, String token){
         Cookie ck = new Cookie(COOKIE_NAME,token);
@@ -65,5 +65,4 @@ public class CookieUtil {
             }
         }
     }
-
 }
