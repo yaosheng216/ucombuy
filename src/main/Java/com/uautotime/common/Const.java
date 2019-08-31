@@ -12,9 +12,10 @@ public class Const {
     public static final String CURRENT_USER = "currentUser";            //当前登陆用户
     public static final String EMAIL = "email";                         //当前登陆账号邮箱
     public static final String USERNAME = "username";                   //当前登陆用户名称
+    public static final String TOKEN_PREFIX = "token_";
 
     public interface RedisCacheExtime{
-        int REDIS_SESSION_EXTIM = 60*30;                                //session的有效期为30分钟
+        int REDIS_SESSION_EXTIME = 60*30;                                //session的有效期为30分钟
     }
     
     public interface ProductListOrderBy{
