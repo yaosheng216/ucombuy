@@ -20,6 +20,7 @@ public class RedisPool {
     private static String redisIp = PropertiesUtil.getProperty("redis.ip");
     private static Integer redisPort = Integer.parseInt(PropertiesUtil.getProperty("redis.port"));
     private static void initPolol(){
+
         JedisPoolConfig config = new JedisPoolConfig();
 
         config.setMaxTotal(maxTotal);
@@ -42,6 +43,7 @@ public class RedisPool {
     }
 
     public static void returnBrokenResource(Jedis jedis){
+
         if(jedis != null){
             pool.returnBrokenResource(jedis);
         }
@@ -53,6 +55,7 @@ public class RedisPool {
     }
 
     public static void main(String[] args) {
+
         Jedis jedis = pool.getResource();
         jedis.set("Jeson","yaosheng");
         pool.destroy();                             //临时调用，销毁连接池中的所有连接

@@ -39,6 +39,7 @@ public class JsonUtil {
     }
 
     public static <T> String obj2String(T obj){
+
         if(obj == null){
             return null;
         }
@@ -51,6 +52,7 @@ public class JsonUtil {
     }
 
     public static <T> String obj2StringPretty(T obj){
+
         if(obj == null){
             return null;
         }
@@ -63,6 +65,7 @@ public class JsonUtil {
     }
 
     public static <T> T string2obj(String str,Class<T> clazz){
+
         if(StringUtils.isEmpty(str) || clazz == null){
             return null;
         }
@@ -75,6 +78,7 @@ public class JsonUtil {
     }
 
     public static <T> T string2obj(String str, TypeReference<T> typeReference){
+
         if(StringUtils.isEmpty(str) ||  typeReference == null){
             return null;
         }
@@ -87,6 +91,7 @@ public class JsonUtil {
     }
 
     public static <T> T string2obj(String str,Class<?> collectionClass,Class<?>... elementClass){
+
         JavaType javaType = objectMapper.getTypeFactory().constructParametricType(collectionClass,elementClass);
         try {
             return objectMapper.readValue(str,javaType);
@@ -97,6 +102,7 @@ public class JsonUtil {
     }
 
     public static void main(String[] args) {
+
         User u1 = new User();
         u1.setId(001);
         u1.setEmail("1076009113@qq.com");

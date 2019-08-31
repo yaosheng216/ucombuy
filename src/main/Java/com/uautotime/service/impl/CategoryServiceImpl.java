@@ -26,6 +26,7 @@ public class CategoryServiceImpl implements ICategoryService {
     private CategoryMapper categoryMapper;
 
     public ServerResponse addCategory(String categoryName,Integer parentId){
+
         if(parentId == null || StringUtils.isBlank(categoryName)){
             return ServerResponse.creatByErrorMessage("添加品类参数错误");
         }
@@ -43,6 +44,7 @@ public class CategoryServiceImpl implements ICategoryService {
     }
 
     public ServerResponse updateCategoryName(Integer categoryId,String categoryName){
+
         if(categoryId == null || StringUtils.isBlank(categoryName)){
             return ServerResponse.creatByErrorMessage("添加品类参数错误");
         }
@@ -59,6 +61,7 @@ public class CategoryServiceImpl implements ICategoryService {
     }
 
     public ServerResponse<List<Category>> getChildrenParallelCategory(Integer categoryId){
+
         List<Category> categoryList = categoryMapper.selectCategoryChilerenByParentId(categoryId);
         if(CollectionUtils.isEmpty(categoryList)){
             //判断集合是否为空
@@ -88,6 +91,7 @@ public class CategoryServiceImpl implements ICategoryService {
 
     //递归算法，算出子节点
     private Set<Category> findChildrenCategory(Set<Category> categorySet,Integer categoryId){
+
         Category category = categoryMapper.selectByPrimaryKey(categoryId);
         if(category != null){
             categorySet.add(category);

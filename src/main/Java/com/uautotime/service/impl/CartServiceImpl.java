@@ -61,6 +61,7 @@ public class CartServiceImpl implements ICartService {
     }
 
     public ServerResponse<CartVo> update(Integer userId, Integer productId, Integer count){
+
         if(productId == null || count == null){
             return ServerResponse.creatByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(),ResponseCode.ILLEGAL_ARGUMENT.getDesc());
         }
@@ -72,6 +73,7 @@ public class CartServiceImpl implements ICartService {
     }
 
     public ServerResponse<CartVo> deleteProduct(Integer userId,String productIds){
+
         List<String> productList = Splitter.on(",").splitToList(productIds);
         if(CollectionUtils.isEmpty(productList)){
             return ServerResponse.creatByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(),ResponseCode.ILLEGAL_ARGUMENT.getDesc());
@@ -91,6 +93,7 @@ public class CartServiceImpl implements ICartService {
     }
 
     public ServerResponse<Integer> getCartProductCount(Integer userId){
+
         if(userId == null){
             return ServerResponse.creatBySuccess(0);
         }
@@ -98,6 +101,7 @@ public class CartServiceImpl implements ICartService {
     }
 
     private CartVo getCartVoLimit(Integer userId) {
+
         CartVo cartVo = new CartVo();
         List<Cart> cartList = cartMapper.selectCartByUserId(userId);
         List<CartProductVo> cartProductVoList = Lists.newArrayList();
@@ -155,6 +159,7 @@ public class CartServiceImpl implements ICartService {
     }
 
     private boolean getAllCheckedStatus(Integer userId){
+
         if(userId == null){
             return false;
         }

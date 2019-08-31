@@ -6,7 +6,7 @@ import com.uautotime.dao.UserMapper;
 import com.uautotime.pojo.User;
 import com.uautotime.service.IUserService;
 import com.uautotime.util.MD5Util;
-import com.uautotime.util.RedisPoolUtil;
+import com.uautotime.util.RedisShardedPoolUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -102,7 +102,7 @@ public class UserServiceImpl implements IUserService {
         if(resultCount>0){
             //说明问题及问题答案是这个用户的，并且是正确的
             String forgetToken = UUID.randomUUID().toString();
-            RedisPoolUtil.setEx(Const.TOKEN_PREFIX+username,forgetToken,60*60*12);
+            RedisShardedPoolUtil.setEx(Const.TOKEN_PREFIX+username,forgetToken,60*60*12);
             return ServerResponse.creatBySuccess(forgetToken);
         }
         return ServerResponse.creatByErrorMessage("问题的答案错误");
@@ -118,7 +118,7 @@ public class UserServiceImpl implements IUserService {
             //用户不存在
             return ServerResponse.creatByErrorMessage("用户不存在");
         }
-        String token = RedisPoolUtil.get(Const.TOKEN_PREFIX+username);
+        String token = RedisShardedPoolUtil.get(Const.TOKEN_PREFIX+username);
         if(org.apache.commons.lang3.StringUtils.isBlank(token)){
             return ServerResponse.creatByErrorMessage("token无效或者过期");
         }
@@ -187,6 +187,7 @@ public class UserServiceImpl implements IUserService {
      * @return
      */
     public ServerResponse checkAdminRole(User user){
+
         if(user != null && user.getRole().intValue() == Const.Role.ROLE_ADMIN){
             return ServerResponse.creatBySuccess();
         }

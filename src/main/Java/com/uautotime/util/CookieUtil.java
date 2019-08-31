@@ -17,7 +17,8 @@ public class CookieUtil {
     private static final String COOKIE_NAME = "ucombuy_login_token";
 
     public static String readLoginToken(HttpServletRequest request){
-       Cookie[] cks = request.getCookies();
+
+        Cookie[] cks = request.getCookies();
         if(cks != null){
             for(Cookie ck : cks){
                 log.info("read cookieName : {},cookieValue : {}",ck.getName(),ck.getValue());
@@ -38,6 +39,7 @@ public class CookieUtil {
     //e:e.ucombuy.com/test               cookie:domain=E.ucombuy.com;path="/test"
 
     public static void writeLoginToken(HttpServletResponse response, String token){
+
         Cookie ck = new Cookie(COOKIE_NAME,token);
         ck.setDomain(COOKIE_DOMAIN);
         ck.setPath("/");                       //代表path设置在根目录
@@ -51,6 +53,7 @@ public class CookieUtil {
     }
 
     public static void delLoginToken(HttpServletRequest request,HttpServletResponse response){
+
         Cookie[] cks = request.getCookies();
         if(cks != null){
             for(Cookie ck : cks){

@@ -97,6 +97,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     private OrderVo assembleOrderVo(Order order,List<OrderItem>orderItemList){
+
         OrderVo orderVo = new OrderVo();
         orderVo.setOrderNo(order.getOrderNo());
         orderVo.setPayment(order.getPayment());
@@ -145,6 +146,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     private ShippingVo assembleShippingVo(Shipping shipping){
+
         ShippingVo shippingVo = new ShippingVo();
         shippingVo.setReceiverName(shipping.getReceiverName());
         shippingVo.setReceiverAddress(shipping.getReceiverAddress());
@@ -159,12 +161,14 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     private void cleanCart(List<Cart> cartList){
+
         for(Cart cart : cartList){
             cartMapper.deleteByPrimaryKey(cart.getId());
         }
     }
 
     private void reduceProductStock(List<OrderItem> orderItemList){
+
         for(OrderItem orderItem : orderItemList){
             Product product = productMapper.selectByPrimaryKey(orderItem.getProductId());
             product.setStock(product.getStock()-orderItem.getQuantity());
@@ -173,6 +177,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     private Order assembleOrder(Integer userId,Integer shippingId,BigDecimal payment){
+
         Order order = new Order();
         long orderNo = this.generateOrderNo();
         order.setOrderNo(orderNo);
@@ -198,6 +203,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     private BigDecimal getOrderTotalPrice(List<OrderItem> orderItemList){
+
         BigDecimal payment = new BigDecimal("0");
         for(OrderItem orderItem : orderItemList){
            payment = BigDecimalUtil.add(payment.doubleValue(),orderItem.getTotalPrice().doubleValue());
@@ -206,6 +212,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     private ServerResponse getCartOrderItem(Integer userId,List<Cart> cartList){
+
         List<OrderItem> orderItemList = Lists.newArrayList();
         if(CollectionUtils.isEmpty(cartList)){
             return ServerResponse.creatByErrorMessage("购物车为空");
@@ -234,6 +241,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     public ServerResponse<String> cancel(Integer userId,Long orderNo){
+
         Order order = orderMapper.selectByUserIdAndOrderNo(userId,orderNo);
         if(orderNo == null){
             return ServerResponse.creatByErrorMessage("订单不存在");
@@ -275,6 +283,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     public ServerResponse<OrderVo> getOrderDetail(Integer userId,Long orderNo){
+
         Order order = orderMapper.selectByUserIdAndOrderNo(userId, orderNo);
         if(order != null){
             List<OrderItem> orderItemList = orderItemMapper.getByOrderNoUserId(orderNo, userId);
@@ -285,6 +294,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     public ServerResponse<PageInfo> getOrderList(Integer userId,int pageNum,int pageSzie){
+
         PageHelper.startPage(pageNum,pageSzie);
         List<Order> orderList = orderMapper.selectByUserId(userId);
         List<OrderVo> orderVoList = assembleOrderVoList(orderList,userId);
@@ -294,6 +304,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     private List<OrderVo> assembleOrderVoList(List<Order> orderList,Integer userId){
+
         List<OrderVo> orderVoList = Lists.newArrayList();
         for(Order order : orderList){
             List<OrderItem> orderItemList = Lists.newArrayList();
@@ -310,6 +321,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     public ServerResponse pay(Long orderNo, Integer userId, String path) {
+
         Map<String, String> resultMap = Maps.newHashMap();
         Order order = orderMapper.selectByUserIdAndOrderNo(userId, orderNo);
         if (order == null) {
@@ -425,6 +437,7 @@ public class OrderServiceImpl implements IOrderService {
 
     // 简单打印应答
     private void dumpResponse(AlipayResponse response) {
+
         if (response != null) {
             log.info(String.format("code:%s, msg:%s", response.getCode(), response.getMsg()));
             if (StringUtils.isNotEmpty(response.getSubCode())) {
@@ -436,6 +449,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     public ServerResponse aliCallback(Map<String,String> params){
+
         Long orderNo = Long.parseLong(params.get("out_trade_no"));
         String tradeNo = params.get("trade_no");
         String tradeStatus = params.get("trade_status");
@@ -464,6 +478,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     public ServerResponse queryOrderPayStatus(Integer userId,Long orderNo){
+
         Order order = orderMapper.selectByUserIdAndOrderNo(userId,orderNo);
         if(order == null){
             return ServerResponse.creatByErrorMessage("用户没有该订单");
@@ -476,6 +491,7 @@ public class OrderServiceImpl implements IOrderService {
 
     //backend
     public ServerResponse<PageInfo> manageList(int pageNum,int pageSize){
+
         PageHelper.startPage(pageNum, pageSize);
         List<Order> orderList = orderMapper.selectAllOrder();
         List<OrderVo> orderVoList = this.assembleOrderVoList(orderList,null);
@@ -485,6 +501,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     public ServerResponse<OrderVo> manageDetail(Long orderNo){
+
         Order order = orderMapper.selectByOrderNo(orderNo);
         if(order != null){
             List<OrderItem> orderItemList = orderItemMapper.getByOrderNo(orderNo);
@@ -495,6 +512,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     public ServerResponse<PageInfo> manageSearch(Long orderNo,int pageNum,int pageSize){
+
         PageHelper.startPage(pageNum,pageSize);
         Order order = orderMapper.selectByOrderNo(orderNo);
         if(order != null){
@@ -508,6 +526,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     public ServerResponse<String> manageSendGoods(Long orderNo){
+
         Order order = orderMapper.selectByOrderNo(orderNo);
         if(order != null){
             if(order.getStatus() == Const.OrderStatusEnum.PAID.getCode()){

@@ -23,6 +23,7 @@ public class ShippingServiceImpl implements IShippingService {
     private ShippingMapper shippingMapper;
 
     public ServerResponse add(Integer userId,Shipping shipping){
+
         shipping.setUserId(userId);
         int rowCount = shippingMapper.insert(shipping);
         if(rowCount > 0){
@@ -34,6 +35,7 @@ public class ShippingServiceImpl implements IShippingService {
     }
 
     public ServerResponse<String> del(Integer userId,Integer shippingId){
+
         int resultCount = shippingMapper.deleteByShippingIdUserId(userId,shippingId);
         if(resultCount > 0){
             return ServerResponse.creatBySuccess("删除地址成功");
@@ -42,6 +44,7 @@ public class ShippingServiceImpl implements IShippingService {
     }
 
     public ServerResponse update(Integer userId,Shipping shipping){
+
         shipping.setUserId(userId);
         int rowCount = shippingMapper.updateByShipping(shipping);
         if(rowCount > 0){
@@ -51,6 +54,7 @@ public class ShippingServiceImpl implements IShippingService {
     }
 
     public ServerResponse<Shipping> select(Integer userId,Integer shippingId){
+
         Shipping shipping = shippingMapper.selectByShippingIdUserId(userId,shippingId);
         if(shipping == null){
             return ServerResponse.creatByErrorMessage("无法查询到改地址");
@@ -59,6 +63,7 @@ public class ShippingServiceImpl implements IShippingService {
     }
 
     public ServerResponse<PageInfo> list(Integer userId,int pageNum,int pageSize){
+
         PageHelper.startPage(pageNum,pageSize);
         List<Shipping> shippingList = shippingMapper.selectByUserId(userId);
         PageInfo pageInfo = new PageInfo(shippingList);

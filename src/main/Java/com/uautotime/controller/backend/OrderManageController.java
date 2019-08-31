@@ -8,7 +8,7 @@ import com.uautotime.service.IOrderService;
 import com.uautotime.service.IUserService;
 import com.uautotime.util.CookieUtil;
 import com.uautotime.util.JsonUtil;
-import com.uautotime.util.RedisPoolUtil;
+import com.uautotime.util.RedisShardedPoolUtil;
 import com.uautotime.vo.OrderVo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +40,7 @@ public class OrderManageController {
         if(StringUtils.isEmpty(loginToken)){
             return ServerResponse.creatByErrorMessage("用户未登录，无法获取当前用户信息");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.string2obj(userJsonStr,User.class);
 
         if(user == null){
@@ -62,7 +62,7 @@ public class OrderManageController {
         if(StringUtils.isEmpty(loginToken)){
             return ServerResponse.creatByErrorMessage("用户未登录，无法获取当前用户信息");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.string2obj(userJsonStr,User.class);
 
         if(user == null){
@@ -84,7 +84,7 @@ public class OrderManageController {
         if(StringUtils.isEmpty(loginToken)){
             return ServerResponse.creatByErrorMessage("用户未登录，无法获取当前用户信息");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.string2obj(userJsonStr,User.class);
 
         if(user == null){
@@ -106,7 +106,7 @@ public class OrderManageController {
         if(StringUtils.isEmpty(loginToken)){
             return ServerResponse.creatByErrorMessage("用户未登录，无法获取当前用户信息");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.string2obj(userJsonStr,User.class);
 
         if(user == null){

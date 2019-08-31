@@ -19,6 +19,7 @@ import java.util.UUID;
 public class FileServiceImpl implements IFileService {
 
     public String upload(MultipartFile file,String path){
+
         String fileName = file.getOriginalFilename();
         //扩展名
         //abc.jpg

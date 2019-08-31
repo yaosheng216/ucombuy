@@ -7,7 +7,7 @@ import com.uautotime.pojo.User;
 import com.uautotime.service.ICartService;
 import com.uautotime.util.CookieUtil;
 import com.uautotime.util.JsonUtil;
-import com.uautotime.util.RedisPoolUtil;
+import com.uautotime.util.RedisShardedPoolUtil;
 import com.uautotime.vo.CartVo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +35,7 @@ public class CartController {
         if(StringUtils.isEmpty(loginToken)){
             return ServerResponse.creatByErrorMessage("用户未登录，无法获取当前用户信息");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.string2obj(userJsonStr,User.class);
 
         if(user == null){
@@ -52,7 +52,7 @@ public class CartController {
         if(StringUtils.isEmpty(loginToken)){
             return ServerResponse.creatByErrorMessage("用户未登录，无法获取当前用户信息");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.string2obj(userJsonStr,User.class);
 
         if(user == null){
@@ -69,7 +69,7 @@ public class CartController {
         if(StringUtils.isEmpty(loginToken)){
             return ServerResponse.creatByErrorMessage("用户未登录，无法获取当前用户信息");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.string2obj(userJsonStr,User.class);
         if(user == null){
             return ServerResponse.creatByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),ResponseCode.NEED_LOGIN.getDesc());
@@ -85,7 +85,7 @@ public class CartController {
         if(StringUtils.isEmpty(loginToken)){
             return ServerResponse.creatByErrorMessage("用户未登录，无法获取当前用户信息");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.string2obj(userJsonStr,User.class);
 
         if(user == null){
@@ -102,7 +102,7 @@ public class CartController {
         if(StringUtils.isEmpty(loginToken)){
             return ServerResponse.creatByErrorMessage("用户未登录，无法获取当前用户信息");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.string2obj(userJsonStr,User.class);
 
         if(user == null){
@@ -119,7 +119,7 @@ public class CartController {
         if(StringUtils.isEmpty(loginToken)){
             return ServerResponse.creatByErrorMessage("用户未登录，无法获取当前用户信息");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.string2obj(userJsonStr,User.class);
 
         if(user == null){
@@ -136,7 +136,7 @@ public class CartController {
         if(StringUtils.isEmpty(loginToken)){
             return ServerResponse.creatByErrorMessage("用户未登录，无法获取当前用户信息");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.string2obj(userJsonStr,User.class);
 
         if(user == null){
@@ -153,7 +153,7 @@ public class CartController {
         if(StringUtils.isEmpty(loginToken)){
             return ServerResponse.creatByErrorMessage("用户未登录，无法获取当前用户信息");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.string2obj(userJsonStr,User.class);
 
         if(user == null){
@@ -170,7 +170,7 @@ public class CartController {
         if(StringUtils.isEmpty(loginToken)){
             return ServerResponse.creatByErrorMessage("用户未登录，无法获取当前用户信息");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.string2obj(userJsonStr,User.class);
 
         if(user == null){

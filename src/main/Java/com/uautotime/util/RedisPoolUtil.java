@@ -34,6 +34,7 @@ public class RedisPoolUtil {
 
     //exTime的单位是秒
     public static String setEx(String key,String value,int exTime){
+
         Jedis jedis = null;
         String result = null;
 
@@ -50,6 +51,7 @@ public class RedisPoolUtil {
     }
 
     public static String set(String key,String value){
+
         Jedis jedis = null;
         String result = null;
 
@@ -66,6 +68,7 @@ public class RedisPoolUtil {
     }
 
     public static String get(String key){
+
         Jedis jedis = null;
         String result = null;
 
@@ -82,6 +85,7 @@ public class RedisPoolUtil {
     }
 
     public static Long del(String key){
+
         Jedis jedis = null;
         Long result = null;
 
@@ -98,12 +102,13 @@ public class RedisPoolUtil {
     }
 
     public static void main(String[] args) {
+
         Jedis jedis = RedisPool.getJedis();
-        RedisPoolUtil.set("keytest","value");
-        String value = RedisPoolUtil.get("keytest");
-        RedisPoolUtil.setEx("keyex","valueex",60*10);
-        RedisPoolUtil.expire("keytest",60*20);
-        RedisPoolUtil.del("keytest");
+        RedisShardedPoolUtil.set("keytest","value");
+        String value = RedisShardedPoolUtil.get("keytest");
+        RedisShardedPoolUtil.setEx("keyex","valueex",60*10);
+        RedisShardedPoolUtil.expire("keytest",60*20);
+        RedisShardedPoolUtil.del("keytest");
         System.out.println("end");
     }
 
