@@ -9,72 +9,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93070ad5-ee5c-4e6c-bfdb-a70c36a10037" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisShardedPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPoolUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserSpringSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext-spring-session.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/uautotime_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/uautotime_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/backend/CategoryManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/backend/CategoryManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/backend/OrderManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/backend/OrderManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/backend/ProductManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/backend/ProductManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/backend/UserManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/backend/UserManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/common/SessionExpireFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/common/SessionExpireFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/ShippingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/ShippingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/ShippingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/ShippingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/BigDecimalUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/BigDecimalUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/CookieUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/CookieUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/DateTimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/DateTimeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/FTPUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/FTPUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/JsonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/MD5Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/MD5Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/PropertiesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisPoolUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisPoolUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources.dev/uautotime.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources.dev/uautotime.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$OrderStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$OrderStatusEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$PayPlatformEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$PayPlatformEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$PaymentTypeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$PaymentTypeEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$ProductListOrderBy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$ProductListOrderBy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$ProductStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$ProductStatusEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$RedisCacheExtime.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const$RedisCacheExtime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/Const.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisShardedPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisShardedPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WEB-INF/classes/com/uautotime/common/RedisPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/WEB-INF/classes/com/uautotime/common/RedisPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/common/RedisPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/common/RedisPool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/common/TokenCache$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/common/TokenCache.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/controller/backend/CategoryManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/backend/CategoryManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/controller/backend/OrderManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/backend/OrderManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/controller/backend/ProductManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/backend/ProductManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/controller/backend/UserManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/backend/UserManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/CartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/ShippingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/ShippingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/controller/portal/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/CartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/CartServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/CategoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/FileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/FileServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/OrderServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/OrderServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/ShippingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/ShippingServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/util/BigDecimalUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/BigDecimalUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/util/CookieUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/CookieUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/util/DateTimeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/DateTimeUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/util/FTPUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/FTPUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/util/JsonUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/JsonUtil$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/util/JsonUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/JsonUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/util/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/MD5Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/util/PropertiesUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/PropertiesUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uautotime/util/RedisPoolUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uautotime/util/RedisPoolUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uautotime.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uautotime.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/uautotime/WEB-INF/classes/com/uautotime/common/TokenCache$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/uautotime/WEB-INF/classes/com/uautotime/common/TokenCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/uautotime.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/uautotime.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/uautotime/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/uautotime/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/uautotime/WEB-INF/classes/com/uautotime/common/RedisPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/uautotime/WEB-INF/classes/com/uautotime/common/RedisPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uautotime.iml" beforeDir="false" afterPath="$PROJECT_DIR$/uautotime.iml" afterDir="false" />
     </list>
     <ignored path="uautotime.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,15 +67,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+            <state relative-caret-position="216">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1877#1878#0" expanded="true" />
-                <element signature="e#1918#1919#0" expanded="true" />
-                <element signature="e#2120#2121#0" expanded="true" />
-                <element signature="e#2162#2163#0" expanded="true" />
+                <element signature="e#1878#1879#0" expanded="true" />
+                <element signature="e#1919#1920#0" expanded="true" />
+                <element signature="e#2122#2123#0" expanded="true" />
+                <element signature="e#2164#2165#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisShardedPool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2091#2107#0" expanded="true" />
+                <element signature="e#2222#2223#0" expanded="true" />
+                <element signature="e#2263#2264#0" expanded="true" />
+                <element signature="e#2330#2331#0" expanded="true" />
+                <element signature="e#2378#2379#0" expanded="true" />
+                <element signature="e#2440#2441#0" expanded="true" />
+                <element signature="e#2482#2483#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1056">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
@@ -132,20 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisPoolUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-280">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPoolUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
-              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,10 +121,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-spring-session.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserSpringSessionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1472">
+              <caret line="252" selection-start-line="252" selection-end-line="252" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2640">
-              <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+            <state relative-caret-position="192">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,9 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/NaneController.java" />
-        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/pojo/Cart.java" />
-        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/pojo/Category.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/pojo/Order.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/pojo/OrderItem.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/pojo/PayInfo.java" />
@@ -215,9 +218,6 @@
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/dao/CartMapper.java" />
         <option value="$PROJECT_DIR$/src/test/Java/com/uautotime/test/TurmentTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources.dev/datasource.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources.dev/uautotime.properties" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPool.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/backend/OrderManageController.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/backend/ProductManageController.java" />
@@ -242,10 +242,16 @@
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/util/MD5Util.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/util/PropertiesUtil.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisPoolUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPoolUtil.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java" />
-        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisPool.java" />
+        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPoolUtil.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisShardedPool.java" />
+        <option value="$PROJECT_DIR$/src/main/resources.dev/uautotime.properties" />
+        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisPool.java" />
+        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserSpringSessionController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext-spring-session.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -293,6 +299,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -449,12 +457,32 @@
               <item name="uautotime" type="462c0819:PsiDirectoryNode" />
               <item name="vo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="uautotime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uautotime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uautotime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uautotime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uautotime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uautotime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,7 +491,7 @@
     <property name="ToolWindowMessages.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567238366814" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567330764356" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/redis/clients/jedis/3.0.0/jedis-3.0.0.jar!/" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -476,6 +504,7 @@
       <recent name="com.uautotime.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\uautotime\src\main\resources" />
       <recent name="C:\Users\admin\IdeaProjects\uautotime\src\main\resources.prod" />
       <recent name="C:\Users\admin\IdeaProjects\uautotime\src\main\resources.dev" />
       <recent name="C:\Users\admin\IdeaProjects\uautotime\src\main\resources.beta" />
@@ -657,6 +686,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.uautotime.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisShardedPoolUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.uautotime.util.RedisShardedPoolUtil" />
+      <module name="uautotime" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uautotime.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -855,13 +898,15 @@
       <item itemvalue="Application.JsonUtil" />
       <item itemvalue="Application.RedisPool" />
       <item itemvalue="Application.RedisPoolUtil" />
-      <item itemvalue="Tomcat Server.tomcat" />
       <item itemvalue="Application.RedisShardedPool" />
+      <item itemvalue="Tomcat Server.tomcat" />
+      <item itemvalue="Application.RedisShardedPoolUtil" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RedisShardedPool" />
         <item itemvalue="Application.RedisPool" />
+        <item itemvalue="Application.RedisShardedPool" />
+        <item itemvalue="Application.RedisShardedPoolUtil" />
         <item itemvalue="Application.JsonUtil" />
         <item itemvalue="Application.RedisPoolUtil" />
       </list>
@@ -907,7 +952,8 @@
       <workItem from="1566899844968" duration="17092000" />
       <workItem from="1567049990189" duration="22409000" />
       <workItem from="1567159053050" duration="8373000" />
-      <workItem from="1567225555218" duration="5924000" />
+      <workItem from="1567225555218" duration="7252000" />
+      <workItem from="1567303962968" duration="8923000" />
     </task>
     <servers />
   </component>
@@ -926,7 +972,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196348000" />
+    <option name="totallyTimeSpent" value="206599000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -945,7 +991,7 @@
       <window_info id="Web" order="1" side_tool="true" weight="0.32902735" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.24012157" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.24392097" />
       <window_info id="Structure" order="5" weight="0.25" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Capture Tool" order="7" />
@@ -1010,41 +1056,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/management/remote/rmi/RMIConnectionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="828" selection-start-line="828" selection-end-line="828" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gitee.uat" />
-    <entry file="file://$PROJECT_DIR$/gitee.uat.pub" />
-    <entry file="file://$PROJECT_DIR$/root" />
-    <entry file="file://$PROJECT_DIR$/root.pub" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-198">
@@ -1053,20 +1064,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/TokenCache.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources.dev/uautotime.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPool.java" />
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/common/SessionExpireFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1316,61 +1314,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisShardedPool.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.6.0/jedis-2.6.0-sources.jar!/redis/clients/util/Pool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        <state relative-caret-position="936">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.6.0/jedis-2.6.0-sources.jar!/redis/clients/jedis/ShardedJedisPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0-sources.jar!/org/apache/commons/pool2/impl/GenericObjectPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="496" selection-start-line="496" selection-end-line="496" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2494#2495#0" expanded="true" />
-            <element signature="e#2535#2536#0" expanded="true" />
-            <element signature="e#2751#2752#0" expanded="true" />
-            <element signature="e#2793#2794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources.dev/datasource.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1472">
+          <caret line="252" selection-start-line="252" selection-end-line="252" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources.dev/uautotime.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPoolUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-664">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/portal/UserSpringSessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-spring-session.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisPoolUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisShardedPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2091#2107#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
+            <element signature="e#2263#2264#0" expanded="true" />
+            <element signature="e#2330#2331#0" expanded="true" />
+            <element signature="e#2378#2379#0" expanded="true" />
+            <element signature="e#2440#2441#0" expanded="true" />
+            <element signature="e#2482#2483#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+        <state relative-caret-position="216">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1877#1878#0" expanded="true" />
-            <element signature="e#1918#1919#0" expanded="true" />
-            <element signature="e#2120#2121#0" expanded="true" />
-            <element signature="e#2162#2163#0" expanded="true" />
+            <element signature="e#1878#1879#0" expanded="true" />
+            <element signature="e#1919#1920#0" expanded="true" />
+            <element signature="e#2122#2123#0" expanded="true" />
+            <element signature="e#2164#2165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisPoolUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2640">
-          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPoolUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1056">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
