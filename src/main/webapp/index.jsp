@@ -2,7 +2,7 @@
 
 <html>
 <body>
-<h2>富文本文件上传页面!</h2>
+<h2>欢迎来到优品购在线购物商城</h2>
 
 SpringMVC上传文件
 <form name="form1" action="/manage/product/upload.do" method="post" enctype="multipart/form-data">

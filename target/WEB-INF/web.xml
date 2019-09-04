@@ -23,7 +23,7 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
 
-  <!-- 二期新增重置session时间的filter -->
+   <!--二期新增重置Session时间的filter -->
   <!--<filter>-->
     <!--<filter-name>sessionExpireFilter</filter-name>-->
     <!--<filter-class>com.uautotime.controller.common.SessionExpireFilter</filter-class>-->
@@ -66,7 +66,7 @@
   <!--<servlet-name>dispatcher</servlet-name>-->
   <!--<url-pattern>*.do</url-pattern>-->
   <!--</servlet-mapping>-->
-  
+
   <servlet-mapping>
     <servlet-name>dispatcher</servlet-name>
     <url-pattern>/</url-pattern>

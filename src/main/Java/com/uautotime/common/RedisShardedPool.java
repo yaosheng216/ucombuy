@@ -56,7 +56,6 @@ public class RedisShardedPool {
         return pool.getResource();
     }
 
-
     public static void returnBrokenResource(ShardedJedis jedis){
         pool.returnBrokenResource(jedis);
     }
