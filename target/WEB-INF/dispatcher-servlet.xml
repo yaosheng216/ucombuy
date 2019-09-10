@@ -39,4 +39,16 @@
         <property name="defaultEncoding" value="UTF-8"></property>
     </bean>
 
+    <mvc:interceptors>
+        <!--定义在这里的，所有都会拦截-->
+        <mvc:interceptor>
+            <!--manage/a.do  /manage/*-->
+            <!--manage/b.do  /manage/*-->
+            <!--manage/product/save.do  /manage/**-->
+            <!--manage/order/detail.do  /manage/**-->
+            <mvc:mapping path="/manage/**"/>
+            <bean class="com.uautotime.controller.common.interceptor.AuthorityInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 </beans>
