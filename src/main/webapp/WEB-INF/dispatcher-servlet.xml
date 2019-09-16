@@ -47,6 +47,7 @@
             <!--manage/product/save.do  /manage/**-->
             <!--manage/order/detail.do  /manage/**-->
             <mvc:mapping path="/manage/**"/>
+            <!--<mvc:exclude-mapping path="/manage/user/login.do" />-->
             <bean class="com.uautotime.controller.common.interceptor.AuthorityInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>

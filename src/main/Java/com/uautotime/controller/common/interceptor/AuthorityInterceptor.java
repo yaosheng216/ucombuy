@@ -1,5 +1,6 @@
 package com.uautotime.controller.common.interceptor;
 
+import com.google.common.collect.Maps;
 import com.uautotime.common.Const;
 import com.uautotime.common.ServerResponse;
 import com.uautotime.pojo.User;
@@ -50,6 +51,13 @@ public class AuthorityInterceptor implements HandlerInterceptor {
             }
             requestParamBuffer.append(mapKey).append("=").append(mapValue);
         }
+
+        if(StringUtils.equals(className,"UserManageController") && StringUtils.equals(methodName,"login")){
+            log.info("权限拦截器拦截到请求,className:{},methodName:{}",className,methodName);
+            //如果是拦截到登录请求，不打印日志，因为参数里面有密码，全部会打印到日志中，此举是为了防止密码泄漏
+            return true;
+        }
+        log.info("权限拦截器拦截到请求,className:{},methodName:{},param:{}",className,methodName,requestParamBuffer.toString());
         User user = null;
         String loginToken = CookieUtil.readLoginToken(request);
         if(StringUtils.isNotEmpty(loginToken)){
@@ -62,12 +70,26 @@ public class AuthorityInterceptor implements HandlerInterceptor {
             response.reset();                  //这里需要添加reset,否则回报异常:getWrite() has already been called for this response
             response.setCharacterEncoding("UTF-8");              //这里需要设置编码，否则会出现乱码
             response.setContentType("application/Json;charset=UTF-8");              //这里需要设置返回值类型，因为代码都是Json接口
-
             PrintWriter out = response.getWriter();
+            //上传富文本由于控件的要求，要特殊处理返回值，这里需要区分是否登陆以及是否有权限
             if(user == null){
-                out.println(JsonUtil.obj2String(ServerResponse.creatByErrorMessage("拦截器拦截，用户未登录")));
+                if(StringUtils.equals(className,"ProductManageController") && StringUtils.equals(methodName,"richtextImgUpload")){
+                    Map resultMap = Maps.newHashMap();
+                    resultMap.put("success",false);
+                    resultMap.put("msg","请登录管理员");
+                    out.println(JsonUtil.obj2String(resultMap));
+                }else{
+                    out.println(JsonUtil.obj2String(ServerResponse.creatByErrorMessage("拦截器拦截，用户未登录")));
+                }
             }else{
-                out.println(JsonUtil.obj2String(ServerResponse.creatByErrorMessage("拦截器拦截，用户无权限操作")));
+                if(StringUtils.equals(className,"ProductManageController") && StringUtils.equals(methodName,"richtextImgUpload")){
+                    Map resultMap = Maps.newHashMap();
+                    resultMap.put("success",false);
+                    resultMap.put("msg","无权限操作");
+                    out.println(JsonUtil.obj2String(resultMap));
+                }else{
+                    out.println(JsonUtil.obj2String(ServerResponse.creatByErrorMessage("拦截器拦截，用户无权限操作")));
+                }
             }
             out.flush();
             out.close();                 //这里需要关闭
