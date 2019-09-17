@@ -113,5 +113,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:4.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.session:spring-session:1.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.8" level="project" />
+    <orderEntry type="library" name="alipay-trade-sdk-20161215-source1" level="project" />
+    <orderEntry type="library" name="alipay-trade-sdk-20161215-source" level="project" />
+    <orderEntry type="library" name="alipay-sdk-java-3.3.0" level="project" />
   </component>
 </module>

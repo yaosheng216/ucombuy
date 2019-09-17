@@ -51,7 +51,6 @@ public class AuthorityInterceptor implements HandlerInterceptor {
             }
             requestParamBuffer.append(mapKey).append("=").append(mapValue);
         }
-
         if(StringUtils.equals(className,"UserManageController") && StringUtils.equals(methodName,"login")){
             log.info("权限拦截器拦截到请求,className:{},methodName:{}",className,methodName);
             //如果是拦截到登录请求，不打印日志，因为参数里面有密码，全部会打印到日志中，此举是为了防止密码泄漏
@@ -65,7 +64,6 @@ public class AuthorityInterceptor implements HandlerInterceptor {
             user = JsonUtil.string2obj(userJsonStr,User.class);
         }
         if(user == null || (user.getRole().intValue() != Const.Role.ROLE_ADMIN)){
-
             //返回false,即不会调用Controller里的方法
             response.reset();                  //这里需要添加reset,否则回报异常:getWrite() has already been called for this response
             response.setCharacterEncoding("UTF-8");              //这里需要设置编码，否则会出现乱码
