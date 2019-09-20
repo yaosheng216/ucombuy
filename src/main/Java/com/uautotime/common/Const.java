@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * Created by yaosheng on 2019/4/25.
  */
-public class Const {
+public class Const{
 
     public static final String CURRENT_USER = "currentUser";            //当前登陆用户
     public static final String EMAIL = "email";                         //当前登陆账号邮箱
@@ -45,11 +45,11 @@ public class Const {
             this.value = value;
         }
 
-        public String getValue() {
+        public String getValue(){
             return value;
         }
 
-        public int getCode() {
+        public int getCode(){
             return code;
         }
     }
@@ -71,11 +71,11 @@ public class Const {
         private String value;
         private int code;
 
-        public String getValue() {
+        public String getValue(){
             return value;
         }
 
-        public int getCode() {
+        public int getCode(){
             return code;
         }
 
@@ -109,11 +109,11 @@ public class Const {
         private String value;
         private int code;
 
-        public String getValue() {
+        public String getValue(){
             return value;
         }
 
-        public int getCode() {
+        public int getCode(){
             return code;
         }
     }
@@ -129,11 +129,11 @@ public class Const {
         private String value;
         private int code;
 
-        public String getValue() {
+        public String getValue(){
             return value;
         }
 
-        public int getCode() {
+        public int getCode(){
             return code;
         }
 

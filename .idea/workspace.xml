@@ -7,7 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93070ad5-ee5c-4e6c-bfdb-a70c36a10037" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedissonManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Java/com/uautotime/task/CloseOrderTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/uautotime/task/CloseOrderTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uautotime.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uautotime.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uautotime.iml" beforeDir="false" afterPath="$PROJECT_DIR$/uautotime.iml" afterDir="false" />
     </list>
     <ignored path="uautotime.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/common/interceptor/AuthorityInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="24">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -58,36 +64,50 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/task/CloseOrderTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="440">
+              <caret line="105" column="25" lean-forward="true" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
-                <element signature="e#714#715#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6">
+              <caret line="217" column="16" lean-forward="true" selection-start-line="217" selection-start-column="16" selection-end-line="217" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedissonManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#471#472#0" expanded="true" />
+                <element signature="e#502#503#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisShardedPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="142" column="43" lean-forward="true" selection-start-line="142" selection-start-column="43" selection-end-line="142" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPoolUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2096">
-              <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+            <state relative-caret-position="480">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2692#2693#0" expanded="true" />
+                <element signature="e#2733#2734#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="566" selection-start-line="566" selection-end-line="566" />
+            <state relative-caret-position="12744">
+              <caret line="568" selection-start-line="568" selection-end-line="568" />
             </state>
           </provider>
         </entry>
@@ -132,8 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources.beta/datasource.properties" />
-        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/dao/CartMapper.java" />
         <option value="$PROJECT_DIR$/src/test/Java/com/uautotime/test/TurmentTest.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPool.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/controller/common/SessionExpireFilter.java" />
@@ -154,9 +172,7 @@
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/util/MD5Util.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/util/PropertiesUtil.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisPoolUtil.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext-spring-session.xml" />
-        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPoolUtil.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisPool.java" />
@@ -182,6 +198,10 @@
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/dao/OrderMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources.dev/uautotime.properties" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java" />
+        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPoolUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedissonManage.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedissonManager.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/uautotime/task/CloseOrderTask.java" />
       </list>
     </option>
@@ -387,6 +407,10 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources.dev" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="uautotime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -400,7 +424,7 @@
     <property name="ToolWindowMessages.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568884631624" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568952648713" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -780,7 +804,8 @@
       <workItem from="1568038205074" duration="16264000" />
       <workItem from="1568598950448" duration="1253000" />
       <workItem from="1568624134346" duration="29054000" />
-      <workItem from="1568874479336" duration="6593000" />
+      <workItem from="1568874479336" duration="15759000" />
+      <workItem from="1568953248385" duration="562000" />
     </task>
     <servers />
   </component>
@@ -799,7 +824,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306529000" />
+    <option name="totallyTimeSpent" value="316257000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -823,7 +848,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Run" order="0" sideWeight="0.4969605" weight="0.47540984" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.33442622" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.3327869" />
       <window_info anchor="bottom" id="Java Enterprise" order="2" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50303954" side_tool="true" weight="0.4704918" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49695122" weight="0.38196722" />
@@ -832,7 +857,7 @@
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32838285" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32786885" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.6704918" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.43934426" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" weight="0.3295082" />
@@ -888,20 +913,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-spring-session.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session/1.2.0.RELEASE/spring-session-1.2.0.RELEASE-sources.jar!/org/springframework/session/data/redis/config/annotation/web/http/RedisHttpSessionConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2274">
-          <caret line="228" selection-start-line="228" selection-end-line="228" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisPoolUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2104">
@@ -962,18 +973,6 @@
             <element signature="e#5072#5073#0" expanded="true" />
             <element signature="e#5216#5217#0" expanded="true" />
             <element signature="e#5239#5240#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisShardedPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2692#2693#0" expanded="true" />
-            <element signature="e#2733#2734#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1157,13 +1156,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b569c5df-cd15-4884-8f4e-a85365651497/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="315" column="39" selection-start-line="315" selection-start-column="39" selection-end-line="315" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1632">
@@ -1231,41 +1223,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/common/interceptor/AuthorityInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="566" selection-start-line="566" selection-end-line="566" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources.dev/datasource.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources.dev/uautotime.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="142" column="43" lean-forward="true" selection-start-line="142" selection-start-column="43" selection-end-line="142" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1276,25 +1237,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources.dev/uautotime.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#1429#1430#0" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+            <element signature="e#1532#1533#0" expanded="true" />
+            <element signature="e#1957#1958#0" expanded="true" />
+            <element signature="e#1993#1994#0" expanded="true" />
+            <element signature="e#2025#2026#0" expanded="true" />
+            <element signature="e#2060#2061#0" expanded="true" />
+            <element signature="e#2910#2911#0" expanded="true" />
+            <element signature="e#2946#2947#0" expanded="true" />
+            <element signature="e#2978#2979#0" expanded="true" />
+            <element signature="e#3013#3014#0" expanded="true" />
+            <element signature="e#3297#3298#0" expanded="true" />
+            <element signature="e#3333#3334#0" expanded="true" />
+            <element signature="e#3365#3366#0" expanded="true" />
+            <element signature="e#3400#3401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/util/RedisShardedPoolUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2096">
-          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+        <state relative-caret-position="-432">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/task/CloseOrderTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedissonManage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedisShardedPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="480">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2733#2734#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12744">
+          <caret line="568" selection-start-line="568" selection-end-line="568" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/controller/common/interceptor/AuthorityInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/common/RedissonManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/uautotime/task/CloseOrderTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="105" column="25" lean-forward="true" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="217" column="16" lean-forward="true" selection-start-line="217" selection-start-column="16" selection-end-line="217" selection-end-column="16" />
         </state>
       </provider>
     </entry>

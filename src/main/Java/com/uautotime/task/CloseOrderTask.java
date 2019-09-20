@@ -1,16 +1,19 @@
 package com.uautotime.task;
 
 import com.uautotime.common.Const;
+import com.uautotime.common.RedissonManager;
 import com.uautotime.service.IOrderService;
 import com.uautotime.util.PropertiesUtil;
 import com.uautotime.util.RedisShardedPoolUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.redisson.api.RLock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PreDestroy;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by yaosheng on 2019/9/18.
@@ -21,6 +24,9 @@ public class CloseOrderTask {
 
     @Autowired
     private IOrderService iOrderService;
+
+    @Autowired
+    private RedissonManager redissonManager;
 
     @PreDestroy
     public void delLock(){
@@ -51,7 +57,7 @@ public class CloseOrderTask {
         log.info("关闭订单定时任务结束");
     }
 
-    @Scheduled(cron="0 */1 * * * ?")
+    //@Scheduled(cron="0 */1 * * * ?")
     public void closeOrderTaskV3(){
 
         log.info("关闭订单定时任务启动");
@@ -79,6 +85,30 @@ public class CloseOrderTask {
             }
         }
         log.info("关闭订单定时任务结束");
+    }
+
+    @Scheduled(cron="0 */1 * * * ?")
+    public void closeOrderTaskV4(){
+
+        RLock lock = redissonManager.getRedisson().getLock(Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
+        Boolean getLock = false;
+        try{
+            if(getLock = lock.tryLock(0,50, TimeUnit.SECONDS)){
+                log.info("Redisson获取分布式锁:{},ThreadName:{}",Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
+                int hour = Integer.parseInt(PropertiesUtil.getProperty ("close.order.task.time.hour","2"));
+                iOrderService.closeOrder(hour);
+            }else{
+                log.info("Redisson没有获取分布式锁:{},ThreadName:{}",Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
+            }
+        }catch(InterruptedException e){
+            log.error("Redisson分布式锁获取异常",e);
+        }finally{
+            if(!getLock){
+                return;
+            }
+            lock.unlock();
+            log.info("Redisson分布式锁释放锁");
+        }
     }
 
     private void closeOrder(String lockName){
