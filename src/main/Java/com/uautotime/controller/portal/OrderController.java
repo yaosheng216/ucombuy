@@ -168,7 +168,6 @@ public class OrderController {
         }
 
         //todo 验证各种数据
-
         ServerResponse serverResponse = iOrderService.aliCallback(params);
         if (serverResponse.isSuccess()) {
             return Const.AlipayCallback.RESPONSE_SUCCESS;

@@ -27,7 +27,6 @@ public class UserServiceImpl implements IUserService {
         if (resultCount == 0) {
             return ServerResponse.creatByErrorMessage("用户名不存在");
         }
-
         //todo 密码登陆MD5
         String md5Password = MD5Util.MD5EncodeUtf8(password);
         User user = userMapper.selectLogin(username, md5Password);
@@ -36,7 +35,6 @@ public class UserServiceImpl implements IUserService {
         }
         user.setPassword(org.apache.commons.lang3.StringUtils.EMPTY);         //将登陆的密码制成空
         return ServerResponse.creatBySuccess("登陆成功", user);
-
     }
 
     public ServerResponse<String> register(User user) {
@@ -69,7 +67,6 @@ public class UserServiceImpl implements IUserService {
                     return ServerResponse.creatByErrorMessage("用户名已存在");
                 }
             }
-
             if (Const.EMAIL.equals(type)) {
                 int resultCount = userMapper.checkEmail(str);
                 if (resultCount > 0) {
@@ -180,7 +177,6 @@ public class UserServiceImpl implements IUserService {
     }
 
     //backend
-
     /**
      * 检验是否是管理员登陆
      * @param user

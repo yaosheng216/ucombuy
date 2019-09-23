@@ -30,7 +30,6 @@ public class CategoryServiceImpl implements ICategoryService {
         if(parentId == null || StringUtils.isBlank(categoryName)){
             return ServerResponse.creatByErrorMessage("添加品类参数错误");
         }
-
         Category category = new Category();
         category.setName(categoryName);
         category.setParentId(parentId);
@@ -48,7 +47,6 @@ public class CategoryServiceImpl implements ICategoryService {
         if(categoryId == null || StringUtils.isBlank(categoryName)){
             return ServerResponse.creatByErrorMessage("添加品类参数错误");
         }
-
         Category category = new Category();
         category.setId(categoryId);
         category.setName(categoryName);

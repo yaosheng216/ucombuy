@@ -134,4 +134,5 @@ public class ProductDetailVo {
     public void setParentCategoryId(Integer parentCategoryId) {
         this.parentCategoryId = parentCategoryId;
     }
+
 }

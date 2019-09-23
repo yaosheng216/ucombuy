@@ -3,6 +3,7 @@ package com.uautotime.dao;
 import com.uautotime.pojo.PayInfo;
 
 public interface PayInfoMapper {
+
     int deleteByPrimaryKey(Integer id);
 
     int insert(PayInfo record);

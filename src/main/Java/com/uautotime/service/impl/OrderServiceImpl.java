@@ -188,7 +188,6 @@ public class OrderServiceImpl implements IOrderService {
         order.setPayment(payment);
         order.setUserId(userId);
         order.setShippingId(shippingId);
-
         //发货时间
         //付款时间
         int rowCount = orderMapper.insert(order);
@@ -199,6 +198,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     private long generateOrderNo(){
+
         long currentTime = System.currentTimeMillis();
         return currentTime+new Random().nextInt(100);
     }
@@ -399,7 +399,6 @@ public class OrderServiceImpl implements IOrderService {
         switch (result.getTradeStatus()) {
             case SUCCESS:
                 log.info("支付宝预下单成功: )");
-
                 AlipayTradePrecreateResponse response = result.getResponse();
                 dumpResponse(response);
 
@@ -466,7 +465,6 @@ public class OrderServiceImpl implements IOrderService {
             order.setStatus(Const.OrderStatusEnum.PAID.getCode());
             orderMapper.updateByPrimaryKeySelective(order);
         }
-
         PayInfo payInfo = new PayInfo();
         payInfo.setUserId(order.getUserId());
         payInfo.setOrderNo(order.getOrderNo());

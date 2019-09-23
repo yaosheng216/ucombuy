@@ -12,6 +12,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PayInfo {
+
     private Integer id;
 
     private Integer userId;

@@ -21,6 +21,7 @@ import java.util.List;
 public class JsonUtil {
 
     private static ObjectMapper objectMapper = new ObjectMapper();
+
     static{
         //对象的所有字段全部列入
         objectMapper.setSerializationInclusion(Inclusion.ALWAYS);

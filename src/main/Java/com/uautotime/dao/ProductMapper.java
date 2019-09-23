@@ -27,4 +27,5 @@ public interface ProductMapper {
 
     //这里一定要使用Integer，因为int不能为null，考虑到许多商品已经删除的情况，所以必须要这样做
     Integer selectStockByProductId(Integer id);
+
 }

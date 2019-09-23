@@ -32,6 +32,7 @@ import java.util.*;
  * sdk和demo的意见和问题反馈请联系：liuyang.kly@alipay.com
  */
 public class Main {
+
     private static Log log = LogFactory.getLog(Main.class);
 
     // 支付宝当面付2.0服务
@@ -65,6 +66,7 @@ public class Main {
 
     // 简单打印应答
     private void dumpResponse(AlipayResponse response) {
+
         if (response != null) {
             log.info(String.format("code:%s, msg:%s", response.getCode(), response.getMsg()));
             if (StringUtils.isNotEmpty(response.getSubCode())) {
@@ -76,6 +78,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+
         Main main = new Main();
 
         // 系统商商测试交易保障接口api

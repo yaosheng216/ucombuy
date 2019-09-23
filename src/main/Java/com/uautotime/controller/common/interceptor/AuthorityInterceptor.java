@@ -39,6 +39,7 @@ public class AuthorityInterceptor implements HandlerInterceptor {
         StringBuffer requestParamBuffer = new StringBuffer();
         Map paramMap = request.getParameterMap();
         Iterator it = paramMap.entrySet().iterator();
+
         while(it.hasNext()){
             Map.Entry entry = (Map.Entry)it.next();
             String mapKey = (String)entry.getKey();

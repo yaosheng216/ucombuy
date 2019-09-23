@@ -39,7 +39,6 @@ public class BigDecimalUtil {
         return b1.divide(b2,2,BigDecimal.ROUND_HALF_UP);         //四舍五入方法，保留两位小数
 
         //除不尽的情况
-
     }
 
 }

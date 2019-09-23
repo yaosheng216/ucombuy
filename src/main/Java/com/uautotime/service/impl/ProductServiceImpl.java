@@ -161,7 +161,6 @@ public class ProductServiceImpl implements IProductService {
             ProductListVo productListVo = assembleProductListVo(productItem);
             productListVoList.add(productListVo);
         }
-
         PageInfo pageResult = new PageInfo(productList);
         pageResult.setList(productListVoList);
         return ServerResponse.creatBySuccess(pageResult);
@@ -205,7 +204,6 @@ public class ProductServiceImpl implements IProductService {
         if(StringUtils.isNotBlank(keyword)){
             keyword = new StringBuilder().append("%").append(keyword).append("%").toString();
         }
-
         PageHelper.startPage(pageNum,pageSize);
         //排序处理
         if(StringUtils.isNotBlank(orderBy)){
@@ -215,7 +213,6 @@ public class ProductServiceImpl implements IProductService {
             }
         }
         List<Product> productList = productMapper.selectByNameAndCategoryIds(StringUtils.isBlank(keyword)?null:keyword,categoryIdList.size()==0?null:categoryIdList);
-
         List<ProductListVo> productListVoList = Lists.newArrayList();
         for(Product product : productList){
             ProductListVo productListVo = assembleProductListVo(product);

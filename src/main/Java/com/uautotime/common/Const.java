@@ -15,7 +15,7 @@ public class Const{
     public static final String TOKEN_PREFIX = "token_";
 
     public interface RedisCacheExtime{
-        int REDIS_SESSION_EXTIME = 60*30;                                //session的有效期为30分钟
+        int REDIS_SESSION_EXTIME = 60*30;                               //session的有效期为30分钟
     }
     
     public interface ProductListOrderBy{
@@ -23,6 +23,7 @@ public class Const{
     }
 
     public interface Cart{
+
         int CHECKED = 1;              //即购物车选中状态
         int UN_CHECKED = 0;           //购物车中未选中状态
 
@@ -31,6 +32,7 @@ public class Const{
     }
 
     public interface Role{
+
         int ROLE_CUSTOMER = 0;        //普通用户
         int ROLE_ADMIN = 1;           //管理员
     }
@@ -64,6 +66,7 @@ public class Const{
         ORDER_CLOSE(60,"订单关闭");
 
         OrderStatusEnum(int code,String value){
+
             this.code = code;
             this.value = value;
         }
@@ -80,6 +83,7 @@ public class Const{
         }
 
         public static OrderStatusEnum codeOf(int code){
+
             for(OrderStatusEnum orderStatusEnum : values()){
                 if(orderStatusEnum.getCode() == code){
                     return orderStatusEnum;
@@ -138,6 +142,7 @@ public class Const{
         }
 
         public static PaymentTypeEnum codeOf(int code){
+
             for(PaymentTypeEnum paymentTypeEnum : values()){
                 if(paymentTypeEnum.getCode() == code){
                     return paymentTypeEnum;

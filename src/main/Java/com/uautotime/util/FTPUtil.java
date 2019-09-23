@@ -21,6 +21,7 @@ public class FTPUtil {
     private static String ftpPass = PropertiesUtil.getProperty("ftp.pass");
 
     public FTPUtil(String ip,int port,String user,String pwd){
+
         this.ip = ip;
         this.port = port;
         this.user = user;
@@ -146,4 +147,5 @@ public class FTPUtil {
     public void setFtpClient(FTPClient ftpClient) {
         this.ftpClient = ftpClient;
     }
+
 }
