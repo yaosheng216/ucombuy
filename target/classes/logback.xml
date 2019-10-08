@@ -11,7 +11,7 @@
     </appender>
 
     <appender name="uautotime" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <!--<File>d:/mmalllog/mmall.log</File>-->
+        <!--<File>d:/uautotimelog/uautotime.log</File>-->
         <File>/G:/iMoocuat/apache-tomcat-7.0.94/logs/uautotime.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>/G:/iMoocuat/apache-tomcat-7.0.93/logs/uautotime.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
@@ -23,13 +23,12 @@
         </encoder>
     </appender>
 
-
     <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <!--<File>d:/mmalllog/error.log</File>-->
+        <!--<File>d:/uautotimelog/error.log</File>-->
         <File>/G:/iMoocuat/apache-tomcat-7.0.94/logs/error.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>/G:/iMoocuat/apache-tomcat-7.0.94/logs/error.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
-            <!--<fileNamePattern>d:/mmalllog/error.log.%d{yyyy-MM-dd}.gz</fileNamePattern>-->
+            <!--<fileNamePattern>d:/uautotimelog/error.log.%d{yyyy-MM-dd}.gz</fileNamePattern>-->
             <append>true</append>
             <maxHistory>10</maxHistory>
         </rollingPolicy>
@@ -48,10 +47,7 @@
         <appender-ref ref="console"/>
     </logger>
 
-
-
-    <!-- geelynote mybatis log 日志 -->
-
+    <!-- mybtis log 日志 -->
     <logger name="com.uautotime.dao" level="DEBUG"/>
 
     <!--<logger name="com.ibatis.sqlmap.engine.impl.SqlMapClientDelegate" level="DEBUG" >-->
@@ -68,7 +64,6 @@
     <!--<logger name="java.sql.PreparedStatement" level="DEBUG">-->
     <!--<appender-ref ref="console"/>-->
     <!--</logger>-->
-
 
     <root level="DEBUG">
         <appender-ref ref="console"/>
