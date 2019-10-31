@@ -23,7 +23,6 @@
         </encoder>
     </appender>
 
-
     <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!--<File>d:/mmalllog/error.log</File>-->
         <File>/G:/iMoocuat/apache-tomcat-7.0.94/logs/error.log</File>
@@ -48,8 +47,6 @@
         <appender-ref ref="console"/>
     </logger>
 
-
-
     <!-- geelynote mybatis log 日志 -->
 
     <logger name="com.uautotime.dao" level="DEBUG"/>
@@ -68,7 +65,6 @@
     <!--<logger name="java.sql.PreparedStatement" level="DEBUG">-->
     <!--<appender-ref ref="console"/>-->
     <!--</logger>-->
-
 
     <root level="DEBUG">
         <appender-ref ref="console"/>

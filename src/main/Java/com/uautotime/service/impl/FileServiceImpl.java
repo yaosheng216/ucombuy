@@ -23,7 +23,7 @@ public class FileServiceImpl implements IFileService {
         String fileName = file.getOriginalFilename();
         //扩展名
         //abc.jpg
-        String fileExtensionName = fileName.substring(fileName.lastIndexOf(".")+1);             //获取文件扩展名
+        String fileExtensionName = fileName.substring(fileName.lastIndexOf(".")+1);         //获取文件扩展名
         String uploadFileName = UUID.randomUUID().toString()+"."+fileExtensionName;             //使用UUID防止文件重名
         log.info("开始上传文件,上传文件的文件名:{},上传的路径:{},新文件名:{}",fileName,path,uploadFileName);
 
@@ -33,7 +33,6 @@ public class FileServiceImpl implements IFileService {
             fileDir.mkdirs();
         }
         File targetFile = new File(path,uploadFileName);
-
         try {
             file.transferTo(targetFile);
             //文件已经上传成功
@@ -42,7 +41,6 @@ public class FileServiceImpl implements IFileService {
             //已经上传到FTP服务器
             //todo 上传完成之后，删除upload下面的文件
             targetFile.delete();
-
         } catch (IOException e) {
             log.error("上传文件异常",e);
             return null;
@@ -50,7 +48,6 @@ public class FileServiceImpl implements IFileService {
 
         //A:abc.jpg
         //B:abc.jpg
-
         return targetFile.getName();
     }
 

@@ -81,4 +81,5 @@
 
         <!-- mybatis插件的搭建 -->
     </context>
+
 </generatorConfiguration>

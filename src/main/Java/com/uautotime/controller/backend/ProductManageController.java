@@ -204,7 +204,6 @@ public class ProductManageController {
 //            resultMap.put("sucess",false);
 //            resultMap.put("msg","请登录管理员");
 //            return resultMap;
-//
 //        }
 //        //富文本中对于返回值有自己的要求，我们使用的是simditor，所以按照simditor的要求进行返回
 //        // {

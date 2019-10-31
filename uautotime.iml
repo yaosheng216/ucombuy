@@ -34,6 +34,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources.beta" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources.dev" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources.prod" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -63,7 +64,7 @@
     <orderEntry type="library" name="alipay-trade-sdk-20161215-source1" level="project" />
     <orderEntry type="library" name="alipay-trade-sdk-20161215-source" level="project" />
     <orderEntry type="library" name="alipay-sdk-java-3.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-servlet-api:7.0.64" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-servlet-api:7.0.94" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.0.3.RELEASE" level="project" />
