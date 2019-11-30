@@ -1,4 +1,4 @@
-# uautotime_1
+# ucombuy_优品购
 
 #### 介绍
 优品购商城后端代码
@@ -9,21 +9,20 @@ SpringMVC
 MyBatis(MyBatis-generator、MyBatis-plugin、pagerHelp)
 
 
-#### 安装教程
+#### 项目说明
 
-learning.happymmall.com
+单机架构请切换至v1.0分支
+Tomcat集群+Redis分布式架构请切换至v2.0分支
 
-项目具体代码请切换分支至v1.0
 
+#### 关于作者
 
-#### 码云特技
+个人邮箱：1076009113@qq.com
 
 优品购官方网址：www.ucombuy.com
 
-后台管理地址：admin.ucombuy.com
-
 作者个人主页：www.yaosheng.org
 
-前端前台代码地址：https://gitee.com/yaosheng0216/ucombuy_fe
+前端前台代码地址：https://github.com/YaoSheng0216/ucombuy_fe
 
-前端后台代码地址：https://gitee.com/yaosheng0216/admin_fe
+前端后台代码地址：https://github.com/YaoSheng0216/admin_fe
